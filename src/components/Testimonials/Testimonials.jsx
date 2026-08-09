@@ -9,7 +9,7 @@ const Testimonials = () => {
 
         {
             image: `${import.meta.env.BASE_URL}images/Testimonials/client-1.webp`,
-            name: "Sarah Johnson",
+            name: "David Wilson",
             role: "Luxury Home Buyer",
             review:
             "PrimeEstate made finding our dream home effortless. Their team understood exactly what we needed.",
@@ -19,7 +19,7 @@ const Testimonials = () => {
 
         {
             image: `${import.meta.env.BASE_URL}images/Testimonials/client-2.webp`,
-            name: "David Wilson",
+            name: "Sarah Johnson ",
             role: "Property Investor",
             review:
             "Professional service, premium properties and excellent market knowledge. Highly recommended.",

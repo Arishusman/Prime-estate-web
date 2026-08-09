@@ -8,7 +8,7 @@ const Agents = () => {
     const agents = [
 
         {
-            image: "${import.meta.env.BASE_URL}images/agents/agent-1.webp",
+            image: `${import.meta.env.BASE_URL}images/agents/agent-1.webp`,
             name: "James Anderson",
             role: "Luxury Property Consultant",
             experience: "10 Years",
@@ -18,7 +18,7 @@ const Agents = () => {
 
 
         {
-            image: "${import.meta.env.BASE_URL}images/agents/agent-2.webp",
+            image: `${import.meta.env.BASE_URL}images/agents/agent-2.webp`,
             name: "Sophia Williams",
             role: "Senior Real Estate Advisor",
             experience: "8 Years",
@@ -28,7 +28,7 @@ const Agents = () => {
 
 
         {
-            image: "${import.meta.env.BASE_URL}images/agents/agent-3.webp",
+            image: `${import.meta.env.BASE_URL}images/agents/agent-3.webp`,
             name: "Michael Brown",
             role: "Investment Specialist",
             experience: "12 Years",

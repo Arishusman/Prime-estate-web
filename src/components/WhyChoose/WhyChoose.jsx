@@ -117,7 +117,7 @@ const WhyChoose = () => {
                     <div className="gallery-large">
 
                         <img 
-                            src="/images/why/why-image-1.webp"
+                             src="${import.meta.env.BASE_URL}images/why/why-image-1.webp"
                             alt="Luxury Property"
                         />
 
@@ -128,7 +128,7 @@ const WhyChoose = () => {
                     <div className="gallery-small img-2">
 
                         <img 
-                            src="/images/why/why-image-2.webp"
+                            src="${import.meta.env.BASE_URL}images/why/why-image-2.webp"
                             alt="Luxury Home"
                         />
 
@@ -139,7 +139,7 @@ const WhyChoose = () => {
                     <div className="gallery-small img-3">
 
                         <img 
-                            src="/images/why/why-image-3.webp"
+                            src="${import.meta.env.BASE_URL}images/why/why-image-3.webp"
                             alt="Modern Villa"
                         />
 
@@ -150,7 +150,7 @@ const WhyChoose = () => {
                     <div className="gallery-medium img-4">
 
                         <img 
-                            src="/images/why/why-image-4.webp"
+                            src="${import.meta.env.BASE_URL}images/why/why-image-4.webp"
                             alt="Premium Interior"
                         />
 
@@ -161,7 +161,7 @@ const WhyChoose = () => {
                     <div className="gallery-small img-5">
 
                         <img 
-                            src="/images/why/why-image-5.webp"
+                            src="${import.meta.env.BASE_URL}images/why/why-image-5.webp"
                             alt="Luxury Room"
                         />
 
@@ -172,7 +172,7 @@ const WhyChoose = () => {
                     <div className="gallery-small img-6">
 
                         <img 
-                            src="/images/why/why-image-6.webp"
+                            src="${import.meta.env.BASE_URL}images/why/why-image-6.webp"
                             alt="Beautiful Property"
                         />
 

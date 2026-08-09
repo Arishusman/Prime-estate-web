@@ -11,7 +11,7 @@ const agents = [
         reviews: "128 Reviews",
         phone: "+92 300 1234567",
         email: "alex@primeestate.com",
-        image: "/images/agents/agent-1.webp",
+        image: `${import.meta.env.BASE_URL}images/agents/agent-1.webp`,
         specialty: "Luxury Villas & Estates",
 
         location: "Lahore, Pakistan",
@@ -36,7 +36,7 @@ const agents = [
         reviews: "96 Reviews",
         phone: "+92 301 2345678",
         email: "sophia@primeestate.com",
-        image: "/images/agents/agent-2.webp",
+        image: `${import.meta.env.BASE_URL}images/agents/agent-2.webp`,
         specialty: "Premium Residential",
 
         location: "Lahore, Pakistan",
@@ -61,7 +61,7 @@ const agents = [
         reviews: "114 Reviews",
         phone: "+92 302 3456789",
         email: "daniel@primeestate.com",
-        image: "/images/agents/agent-3.webp",
+        image: `${import.meta.env.BASE_URL}images/agents/agent-3.webp`,
         specialty: "Investment Properties",
 
         location: "Islamabad, Pakistan",
@@ -86,7 +86,7 @@ const agents = [
         reviews: "87 Reviews",
         phone: "+92 303 4567890",
         email: "olivia@primeestate.com",
-        image: "/images/agents/agent-4.webp",
+        image: `${import.meta.env.BASE_URL}images/agents/agent-4.webp`,
         specialty: "Apartments & Penthouses",
 
         location: "Karachi, Pakistan",
@@ -111,7 +111,7 @@ const agents = [
         reviews: "74 Reviews",
         phone: "+92 304 5678901",
         email: "ethan@primeestate.com",
-        image: "/images/agents/agent-5.webp",
+        image: `${import.meta.env.BASE_URL}images/agents/agent-5.webp`,
         specialty: "Commercial Properties",
 
         location: "Karachi, Pakistan",
@@ -136,7 +136,7 @@ const agents = [
         reviews: "103 Reviews",
         phone: "+92 305 6789012",
         email: "emma@primeestate.com",
-        image: "/images/agents/agent-6.webp",
+        image: `${import.meta.env.BASE_URL}images/agents/agent-6.webp`,
         specialty: "Luxury Residences",
 
         location: "Islamabad, Pakistan",

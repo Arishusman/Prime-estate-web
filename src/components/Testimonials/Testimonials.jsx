@@ -8,7 +8,7 @@ const Testimonials = () => {
     const testimonials = [
 
         {
-            image: "/images/testimonials/client-1.webp",
+            image: `${import.meta.env.BASE_URL}images/Testimonials/client-1.webp`,
             name: "Sarah Johnson",
             role: "Luxury Home Buyer",
             review:
@@ -18,7 +18,7 @@ const Testimonials = () => {
 
 
         {
-            image: "/images/testimonials/client-2.webp",
+            image: `${import.meta.env.BASE_URL}images/Testimonials/client-2.webp`,
             name: "David Wilson",
             role: "Property Investor",
             review:
@@ -28,7 +28,7 @@ const Testimonials = () => {
 
 
         {
-            image: "/images/testimonials/client-3.webp",
+            image: `${import.meta.env.BASE_URL}images/Testimonials/client-3.webp`,
             name: "Emma Davis",
             role: "Villa Owner",
             review:

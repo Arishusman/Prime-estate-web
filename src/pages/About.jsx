@@ -157,7 +157,7 @@ function About() {
                     <div className="about-story-image">
 
                         <img
-                            src="/images/properties/property-1.webp"
+                            src="${import.meta.env.BASE_URL}images/properties/property-1.webp"
                             alt="Luxury Prime Estate property"
                             loading="lazy"
                         />

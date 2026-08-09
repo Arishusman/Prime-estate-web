@@ -32,7 +32,7 @@
             rgba(8, 15, 28, .82) 45%,
             rgba(8, 15, 28, .48) 100%
         ),
-        url("/images/properties/property-1.webp")
+        url("${import.meta.env.BASE_URL}images/properties/property-1.webp")
         center / cover no-repeat;
 }
 

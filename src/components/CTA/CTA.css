@@ -1,0 +1,405 @@
+/* =====================================
+   CTA SECTION
+===================================== */
+
+
+.cta-section {
+
+    position: relative;
+
+    width: 100%;
+
+    min-height: 600px;
+
+    background-image: url("/images/cta/cta-image.webp");
+
+    background-size: cover;
+
+    background-position: center;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    overflow: hidden;
+
+}
+
+
+
+
+
+/* =====================================
+   OVERLAY
+===================================== */
+
+
+.cta-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(0,0,0,0.55);
+
+}
+
+
+
+
+
+/* =====================================
+   CONTAINER
+===================================== */
+
+
+.cta-container {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+}
+
+
+
+
+
+/* =====================================
+   CONTENT
+===================================== */
+
+
+.cta-content {
+
+    text-align: center;
+
+    color: white;
+
+    max-width: 850px;
+
+    margin: auto;
+
+}
+
+
+
+
+
+.cta-tag {
+
+    display: inline-block;
+
+    font-size: 13px;
+
+    letter-spacing: 3px;
+
+    font-weight: 600;
+
+    color: #d4af37;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+
+
+.cta-content h2 {
+
+    font-size: 60px;
+
+    line-height: 1.15;
+
+    font-weight: 700;
+
+    margin: 0 0 25px;
+
+    color: white;
+
+}
+
+
+
+
+
+.cta-content p {
+
+    max-width: 650px;
+
+    margin: 0 auto 40px;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    color: rgba(255,255,255,0.85);
+
+}
+
+
+
+
+
+/* =====================================
+   BUTTON
+===================================== */
+
+
+.cta-button {
+
+    padding: 17px 45px;
+
+    border: 1px solid rgba(255,255,255,0.5);
+
+    background: white;
+
+    color: #111827;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .4s ease;
+
+}
+
+
+
+
+
+.cta-button:hover {
+
+    background: #b08d57;
+
+    color: white;
+
+    transform: translateY(-5px);
+
+}
+
+/* =====================================
+   CTA ANIMATION
+===================================== */
+
+
+.cta-content {
+
+    animation: ctaReveal 1.2s ease forwards;
+
+}
+
+
+
+
+
+@keyframes ctaReveal {
+
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(60px);
+
+    }
+
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+
+
+
+/* =====================================
+   BACKGROUND ZOOM EFFECT
+===================================== */
+
+
+.cta-section {
+
+    animation: ctaImageZoom 8s ease-in-out infinite alternate;
+
+}
+
+
+
+
+
+@keyframes ctaImageZoom {
+
+
+    from {
+
+        background-size: 100%;
+
+    }
+
+
+    to {
+
+        background-size: 110%;
+
+    }
+
+}
+
+
+
+
+
+/* =====================================
+   BUTTON EFFECT
+===================================== */
+
+
+.cta-button {
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+
+.cta-button::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: -100%;
+
+    top: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background: rgba(255,255,255,0.25);
+
+    transition: .5s ease;
+
+}
+
+
+
+.cta-button:hover::before {
+
+    left: 100%;
+
+}
+
+
+
+
+
+/* =====================================
+   TABLET RESPONSIVE
+===================================== */
+
+
+@media(max-width:900px){
+
+
+    .cta-section {
+
+        min-height: 520px;
+
+    }
+
+
+
+    .cta-content h2 {
+
+        font-size: 45px;
+
+    }
+
+
+
+    .cta-content p {
+
+        font-size: 16px;
+
+    }
+
+
+}
+
+
+
+
+
+/* =====================================
+   MOBILE RESPONSIVE
+===================================== */
+
+
+@media(max-width:600px){
+
+
+    .cta-section {
+
+        min-height: 480px;
+
+    }
+
+
+
+    .cta-content h2 {
+
+        font-size: 34px;
+
+    }
+
+
+
+    .cta-content p {
+
+        font-size: 15px;
+
+        line-height: 1.6;
+
+    }
+
+
+
+    .cta-button {
+
+        padding: 14px 32px;
+
+    }
+
+
+
+    .cta-tag {
+
+        font-size: 11px;
+
+        letter-spacing: 2px;
+
+    }
+
+
+}

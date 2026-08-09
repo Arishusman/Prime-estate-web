@@ -1,0 +1,700 @@
+/* =========================================================
+   PRIME ESTATE
+   AGENTS PAGE
+========================================================= */
+
+.agents-page {
+    min-height: 100vh;
+    background: #ffffff;
+    color: #111827;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.agents-hero {
+    position: relative;
+
+    min-height: 560px;
+
+    display: flex;
+    align-items: flex-end;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            120deg,
+            #0f172a,
+            #1e293b
+        );
+}
+
+
+.agents-hero::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at 75% 25%,
+            rgba(37,99,235,.28),
+            transparent 35%
+        );
+}
+
+
+.agents-hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    width: min(1200px, 88%);
+
+    margin: 0 auto;
+
+    padding-bottom: 90px;
+}
+
+
+.agents-eyebrow {
+    display: block;
+
+    margin-bottom: 18px;
+
+    color: #93c5fd;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+
+.agents-hero h1 {
+    max-width: 850px;
+
+    margin: 0 0 25px;
+
+    color: #ffffff;
+
+    font-size:
+        clamp(3.5rem, 7vw, 7rem);
+
+    line-height: .95;
+
+    letter-spacing: -.06em;
+}
+
+
+.agents-hero h1 span {
+    display: block;
+
+    color: #93c5fd;
+}
+
+
+.agents-hero p {
+    max-width: 590px;
+
+    margin: 0;
+
+    color: rgba(255,255,255,.65);
+
+    font-size: 1rem;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   MAIN SECTION
+========================================================= */
+
+.agents-section {
+    padding: 110px 6% 130px;
+}
+
+
+.agents-container {
+    width: min(1200px, 100%);
+
+    margin: auto;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.agents-heading {
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+
+    gap: 50px;
+
+    margin-bottom: 65px;
+}
+
+
+.agents-heading > div > span {
+    display: block;
+
+    margin-bottom: 14px;
+
+    color: #2563eb;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 2.5px;
+}
+
+
+.agents-heading h2 {
+    max-width: 600px;
+
+    margin: 0;
+
+    color: #111827;
+
+    font-size:
+        clamp(2.5rem, 4.5vw, 4.5rem);
+
+    line-height: 1;
+
+    letter-spacing: -.055em;
+}
+
+
+.agents-heading > p {
+    max-width: 380px;
+
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: .95rem;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.agents-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 28px;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.agent-card {
+    overflow: hidden;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    background: #ffffff;
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease;
+}
+
+
+.agent-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #dbeafe;
+
+    box-shadow:
+        0 25px 60px
+        rgba(15,23,42,.10);
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.agent-image {
+    position: relative;
+
+    display: block;
+
+    height: 390px;
+
+    overflow: hidden;
+
+    background: #e2e8f0;
+
+    text-decoration: none;
+}
+
+
+.agent-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition:
+        transform .7s cubic-bezier(.2,.7,.2,1);
+}
+
+
+.agent-card:hover .agent-image img {
+    transform: scale(1.06);
+}
+
+
+.agent-image-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(0,0,0,.55),
+            transparent 50%
+        );
+
+    opacity: .8;
+
+    transition: opacity .3s ease;
+}
+
+
+.agent-card:hover .agent-image-overlay {
+    opacity: 1;
+}
+
+
+.agent-view {
+    position: absolute;
+
+    left: 22px;
+    bottom: 20px;
+
+    color: #ffffff;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: .3px;
+
+    opacity: 0;
+
+    transform: translateY(8px);
+
+    transition:
+        opacity .3s ease,
+        transform .3s ease;
+}
+
+
+.agent-card:hover .agent-view {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.agent-card-content {
+    padding: 26px 25px 24px;
+}
+
+
+.agent-role {
+    display: block;
+
+    margin-bottom: 9px;
+
+    color: #2563eb;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+}
+
+
+.agent-card h3 {
+    margin: 0 0 7px;
+
+    color: #111827;
+
+    font-size: 1.45rem;
+
+    letter-spacing: -.035em;
+}
+
+
+.agent-specialty {
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   INFO ROW
+========================================================= */
+
+.agent-info-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+
+    padding: 20px 0;
+
+    margin-top: 20px;
+
+    border-top: 1px solid #eef2f7;
+
+    border-bottom: 1px solid #eef2f7;
+}
+
+
+.agent-info-row span {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+    color: #94a3b8;
+
+    font-size: 9px;
+
+    line-height: 1.4;
+}
+
+
+.agent-info-row span:last-child {
+    border-left: 1px solid #e5e7eb;
+
+    padding-left: 15px;
+}
+
+
+.agent-info-row strong {
+    color: #1e293b;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   PROFILE LINK
+========================================================= */
+
+.agent-profile-link {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding-top: 19px;
+
+    color: #111827;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition: color .25s ease;
+}
+
+
+.agent-profile-link span {
+    font-size: 17px;
+
+    transition: transform .25s ease;
+}
+
+
+.agent-profile-link:hover {
+    color: #2563eb;
+}
+
+
+.agent-profile-link:hover span {
+    transform: translateX(5px);
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.agents-cta {
+    width: min(1200px, 88%);
+
+    margin: 0 auto 110px;
+}
+
+
+.agents-cta-inner {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 50px;
+
+    padding: 65px 70px;
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            120deg,
+            #111827,
+            #1e293b
+        );
+}
+
+
+.agents-cta-inner > div > span {
+    display: block;
+
+    margin-bottom: 14px;
+
+    color: #93c5fd;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+.agents-cta-inner h2 {
+    max-width: 700px;
+
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size:
+        clamp(2rem, 4vw, 3.5rem);
+
+    line-height: 1.05;
+
+    letter-spacing: -.05em;
+}
+
+
+.agents-cta-button {
+    flex-shrink: 0;
+
+    min-height: 55px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 0 27px;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #111827;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition: .3s ease;
+}
+
+
+.agents-cta-button:hover {
+    background: #2563eb;
+
+    color: #ffffff;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .agents-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+
+    .agents-heading {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 25px;
+    }
+
+
+    .agents-heading > p {
+        max-width: 600px;
+    }
+
+
+    .agents-cta-inner {
+        padding: 55px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .agents-hero {
+        min-height: 500px;
+    }
+
+
+    .agents-hero-content {
+        width: 90%;
+
+        padding-bottom: 65px;
+    }
+
+
+    .agents-hero h1 {
+        font-size: 3.3rem;
+    }
+
+
+    .agents-section {
+        padding: 75px 5% 90px;
+    }
+
+
+    .agents-heading {
+        margin-bottom: 45px;
+    }
+
+
+    .agents-heading h2 {
+        font-size: 2.7rem;
+    }
+
+
+    .agents-grid {
+        grid-template-columns: 1fr;
+
+        gap: 22px;
+    }
+
+
+    .agent-image {
+        height: 420px;
+    }
+
+
+    .agents-cta {
+        width: 90%;
+
+        margin-bottom: 75px;
+    }
+
+
+    .agents-cta-inner {
+        padding: 45px 28px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .agents-cta-button {
+        width: 100%;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 430px) {
+
+    .agents-hero h1 {
+        font-size: 2.8rem;
+    }
+
+
+    .agents-hero p {
+        font-size: .9rem;
+    }
+
+
+    .agent-image {
+        height: 380px;
+    }
+
+
+    .agents-heading h2 {
+        font-size: 2.4rem;
+    }
+
+}

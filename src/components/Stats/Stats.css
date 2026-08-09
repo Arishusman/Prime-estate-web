@@ -1,0 +1,151 @@
+/* ======================================================
+   PRIME ESTATE
+   STATS SECTION
+====================================================== */
+
+.stats{
+    padding:120px 20px;
+    background:#f8fafc;
+}
+
+.stats-container{
+    width:min(1280px,92%);
+    margin:auto;
+}
+
+.stats-header{
+    text-align:center;
+    max-width:720px;
+    margin:0 auto 70px;
+}
+
+.stats-header span{
+    display:inline-block;
+    color:#2563eb;
+    font-size:.95rem;
+    font-weight:700;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    margin-bottom:16px;
+}
+
+.stats-header h2{
+    font-size:clamp(2.2rem,5vw,3.8rem);
+    line-height:1.2;
+    color:#111827;
+    margin-bottom:20px;
+    font-weight:800;
+}
+
+.stats-header p{
+    color:#6b7280;
+    line-height:1.8;
+    font-size:1.05rem;
+}
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:28px;
+}
+
+.stat-card{
+    position:relative;
+    background:#fff;
+    border-radius:22px;
+    padding:40px 30px;
+    border:1px solid #e5e7eb;
+    overflow:hidden;
+    transition:.35s ease;
+    box-shadow:0 10px 35px rgba(15,23,42,.05);
+}
+
+.stat-card::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:5px;
+    background:#2563eb;
+    transform:scaleX(0);
+    transform-origin:left;
+    transition:.35s ease;
+}
+
+.stat-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 25px 60px rgba(37,99,235,.15);
+}
+
+.stat-card:hover::before{
+    transform:scaleX(1);
+}
+
+.stat-card h3{
+    font-size:3rem;
+    color:#2563eb;
+    font-weight:800;
+    margin-bottom:16px;
+}
+
+.stat-card h4{
+    font-size:1.3rem;
+    color:#111827;
+    margin-bottom:14px;
+    font-weight:700;
+}
+
+.stat-card p{
+    color:#6b7280;
+    line-height:1.8;
+    font-size:.98rem;
+}
+
+/* ===========================
+   Tablet
+=========================== */
+
+@media (max-width:992px){
+
+.stats-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width:768px){
+
+.stats{
+    padding:80px 16px;
+}
+
+.stats-header{
+    margin-bottom:45px;
+}
+
+.stats-grid{
+    grid-template-columns:1fr;
+}
+
+.stat-card{
+    padding:30px 24px;
+}
+
+.stat-card h3{
+    font-size:2.5rem;
+}
+
+.stats-header h2{
+    font-size:2rem;
+}
+
+.stats-header p{
+    font-size:.95rem;
+}
+
+}

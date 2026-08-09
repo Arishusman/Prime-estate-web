@@ -1,0 +1,436 @@
+/* =========================================================
+   PRIME ESTATE
+   PREMIUM NAVBAR
+========================================================= */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 1000;
+
+    background: rgba(7, 13, 24, .72);
+
+    border-bottom:
+        1px solid rgba(255, 255, 255, .08);
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    transition:
+        background .3s ease,
+        box-shadow .3s ease;
+}
+
+
+.navbar-container {
+    width: min(1400px, 92%);
+
+    min-height: 82px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 35px;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.navbar-logo {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+}
+
+
+.navbar-logo span {
+    font-size: 15px;
+
+    font-weight: 300;
+
+    letter-spacing: 3px;
+}
+
+
+.navbar-logo strong {
+    color: #93c5fd;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.navbar-menu {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 36px;
+
+    margin-left: auto;
+}
+
+
+.nav-link {
+    position: relative;
+
+    padding: 31px 0;
+
+    color: rgba(255,255,255,.68);
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: .5px;
+
+    text-decoration: none;
+
+    transition:
+        color .25s ease;
+}
+
+
+.nav-link::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: 22px;
+
+    width: 0;
+    height: 1px;
+
+    background: #93c5fd;
+
+    transform: translateX(-50%);
+
+    transition:
+        width .25s ease;
+}
+
+
+.nav-link:hover {
+    color: #ffffff;
+}
+
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+
+.nav-link.active {
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   CONSULTATION BUTTON
+========================================================= */
+
+.navbar-consultation {
+    min-height: 43px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 14px;
+
+    padding: 0 18px;
+
+    border:
+        1px solid rgba(255,255,255,.18);
+
+    border-radius: 5px;
+
+    background:
+        rgba(255,255,255,.07);
+
+    color: #ffffff;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: .5px;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+
+    backdrop-filter: blur(10px);
+
+    transition:
+        background .25s ease,
+        border-color .25s ease,
+        transform .25s ease;
+}
+
+
+.navbar-consultation span {
+    font-size: 17px;
+
+    transition:
+        transform .25s ease;
+}
+
+
+.navbar-consultation:hover {
+    background: #2563eb;
+
+    border-color: #2563eb;
+
+    transform: translateY(-2px);
+}
+
+
+.navbar-consultation:hover span {
+    transform: translateX(4px);
+}
+
+
+/* =========================================================
+   MOBILE TOGGLE
+========================================================= */
+
+.navbar-toggle {
+    width: 42px;
+    height: 42px;
+
+    display: none;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
+
+    padding: 0;
+
+    border:
+        1px solid rgba(255,255,255,.15);
+
+    border-radius: 5px;
+
+    background:
+        rgba(255,255,255,.06);
+
+    cursor: pointer;
+}
+
+
+.navbar-toggle span {
+    width: 18px;
+    height: 1.5px;
+
+    background: #ffffff;
+
+    transition:
+        transform .25s ease,
+        opacity .25s ease;
+}
+
+
+.navbar-toggle.open span:nth-child(1) {
+    transform:
+        translateY(6.5px)
+        rotate(45deg);
+}
+
+
+.navbar-toggle.open span:nth-child(2) {
+    opacity: 0;
+}
+
+
+.navbar-toggle.open span:nth-child(3) {
+    transform:
+        translateY(-6.5px)
+        rotate(-45deg);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .navbar-container {
+        width: 92%;
+
+        min-height: 74px;
+    }
+
+
+    .navbar-menu {
+        gap: 22px;
+    }
+
+
+    .navbar-consultation {
+        padding: 0 13px;
+
+        font-size: 9px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 760px) {
+
+    .navbar-container {
+        min-height: 70px;
+    }
+
+
+    .navbar-menu {
+        position: absolute;
+
+        top: 70px;
+        left: 4%;
+
+        width: 92%;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 0;
+
+        margin: 0;
+
+        padding: 10px;
+
+        border:
+            1px solid rgba(255,255,255,.09);
+
+        border-radius: 8px;
+
+        background:
+            rgba(7,13,24,.96);
+
+        box-shadow:
+            0 25px 60px
+            rgba(0,0,0,.3);
+
+        backdrop-filter: blur(20px);
+
+        opacity: 0;
+
+        visibility: hidden;
+
+        transform:
+            translateY(-10px);
+
+        transition:
+            opacity .25s ease,
+            visibility .25s ease,
+            transform .25s ease;
+    }
+
+
+    .navbar-menu.navbar-menu-open {
+        opacity: 1;
+
+        visibility: visible;
+
+        transform:
+            translateY(0);
+    }
+
+
+    .nav-link {
+        padding: 16px;
+
+        border-radius: 5px;
+
+        font-size: 11px;
+    }
+
+
+    .nav-link::after {
+        display: none;
+    }
+
+
+    .nav-link:hover,
+    .nav-link.active {
+        background:
+            rgba(255,255,255,.06);
+
+        color: #ffffff;
+    }
+
+
+    .navbar-consultation {
+        display: none;
+    }
+
+
+    .navbar-toggle {
+        display: flex;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+
+    .navbar-container {
+        width: 90%;
+    }
+
+
+    .navbar-logo span,
+    .navbar-logo strong {
+        font-size: 13px;
+
+        letter-spacing: 1.5px;
+    }
+
+}

@@ -1,0 +1,625 @@
+/* =========================================================
+   PRIME ESTATE — PREMIUM CINEMATIC HERO
+========================================================= */
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    height: 100svh;
+    min-height: 680px;
+
+    overflow: hidden;
+    isolation: isolate;
+
+    background: #070b12;
+}
+
+
+/* =========================================================
+   VILLA BACKGROUND
+========================================================= */
+
+.hero-background {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+
+    overflow: hidden;
+}
+
+.hero-image {
+    position: absolute;
+    inset: -3%;
+
+    width: 106%;
+    height: 106%;
+
+    object-fit: cover;
+    object-position: center center;
+
+    display: block;
+
+    will-change: transform;
+
+    animation: villaCinematicMove 18s
+        cubic-bezier(.22,.61,.36,1)
+        infinite alternate;
+}
+
+
+/* =========================================================
+   SLOW CINEMATIC CAMERA MOVEMENT
+========================================================= */
+
+@keyframes villaCinematicMove {
+
+    0% {
+        transform:
+            scale(1.01)
+            translate3d(0, 0, 0);
+    }
+
+    50% {
+        transform:
+            scale(1.045)
+            translate3d(-0.8%, -0.35%, 0);
+    }
+
+    100% {
+        transform:
+            scale(1.085)
+            translate3d(-1.5%, -0.7%, 0);
+    }
+}
+
+
+/* =========================================================
+   CINEMATIC DARK OVERLAY
+========================================================= */
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    z-index: 2;
+
+    pointer-events: none;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(4, 8, 14, .82) 0%,
+            rgba(4, 8, 14, .62) 25%,
+            rgba(4, 8, 14, .27) 53%,
+            rgba(4, 8, 14, .10) 100%
+        );
+}
+
+
+/* Bottom cinematic depth */
+
+.hero-overlay::after {
+    content: "";
+
+    position: absolute;
+    inset: auto 0 0;
+
+    height: 38%;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(3, 7, 12, .68),
+            transparent
+        );
+}
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.hero-content {
+    position: relative;
+
+    z-index: 5;
+
+    width: min(1250px, 88%);
+
+    height: 100%;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+/* =========================================================
+   BADGE
+========================================================= */
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 10px 19px;
+
+    margin-bottom: 25px;
+
+    border: 1px solid
+        rgba(255, 255, 255, .22);
+
+    border-radius: 999px;
+
+    background:
+        rgba(255, 255, 255, .08);
+
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    color: rgba(255,255,255,.95);
+
+    font-size: 12px;
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+
+    animation: heroFadeUp .9s
+        cubic-bezier(.22,.61,.36,1)
+        both;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.hero h1 {
+    margin: 0 0 25px;
+
+    max-width: 720px;
+
+    color: #ffffff;
+
+    font-size:
+        clamp(3.7rem, 6.5vw, 6.7rem);
+
+    font-weight: 700;
+
+    line-height: .98;
+
+    letter-spacing: -.055em;
+
+    text-shadow:
+        0 12px 45px
+        rgba(0,0,0,.38);
+
+    animation: heroFadeUp 1s
+        .08s
+        cubic-bezier(.22,.61,.36,1)
+        both;
+}
+
+
+/* Accent */
+
+.hero h1 span {
+    color: #e8eef7;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.hero p {
+    max-width: 560px;
+
+    margin: 0 0 35px;
+
+    color:
+        rgba(255,255,255,.84);
+
+    font-size: 1.05rem;
+
+    line-height: 1.8;
+
+    letter-spacing: .01em;
+
+    animation: heroFadeUp 1s
+        .18s
+        cubic-bezier(.22,.61,.36,1)
+        both;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.hero-buttons {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    flex-wrap: wrap;
+
+    animation: heroFadeUp 1s
+        .28s
+        cubic-bezier(.22,.61,.36,1)
+        both;
+}
+
+
+/* Base */
+
+.hero-btn {
+    height: 56px;
+
+    min-width: 180px;
+
+    padding: 0 27px;
+
+    border-radius: 10px;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        transform .35s ease,
+        background .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease;
+
+    outline: none;
+}
+
+
+/* Primary */
+
+.hero-btn-primary {
+    border: 1px solid #ffffff;
+
+    background: #ffffff;
+
+    color: #111827;
+
+    box-shadow:
+        0 15px 35px
+        rgba(0,0,0,.22);
+}
+
+.hero-btn-primary:hover {
+    transform: translateY(-4px);
+
+    background: #f1f4f8;
+
+    box-shadow:
+        0 20px 45px
+        rgba(0,0,0,.3);
+}
+
+
+/* Secondary */
+
+.hero-btn-secondary {
+    border: 1px solid
+        rgba(255,255,255,.32);
+
+    background:
+        rgba(255,255,255,.08);
+
+    color: #ffffff;
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.hero-btn-secondary:hover {
+    transform: translateY(-4px);
+
+    background:
+        rgba(255,255,255,.16);
+
+    border-color:
+        rgba(255,255,255,.5);
+}
+
+
+/* =========================================================
+   CONTENT ENTRY
+========================================================= */
+
+@keyframes heroFadeUp {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(35px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+
+/* =========================================================
+   SCROLL INDICATOR
+========================================================= */
+
+.hero-scroll {
+    position: absolute;
+
+    left: 50%;
+    bottom: 32px;
+
+    z-index: 7;
+
+    transform: translateX(-50%);
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    color:
+        rgba(255,255,255,.78);
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    white-space: nowrap;
+
+    pointer-events: none;
+}
+
+
+/* Line */
+
+.hero-scroll-line {
+    position: relative;
+
+    display: block;
+
+    width: 1px;
+    height: 42px;
+
+    overflow: hidden;
+
+    background:
+        rgba(255,255,255,.25);
+}
+
+.hero-scroll-line::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: -100%;
+
+    width: 100%;
+    height: 55%;
+
+    background: #ffffff;
+
+    animation:
+        scrollLine 1.8s
+        ease-in-out
+        infinite;
+}
+
+
+@keyframes scrollLine {
+
+    0% {
+        top: -60%;
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        top: 120%;
+        opacity: 0;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .hero {
+        min-height: 620px;
+    }
+
+    .hero-image {
+        width: 115%;
+        height: 115%;
+
+        left: -7.5%;
+        top: -7.5%;
+
+        object-position: center center;
+    }
+
+    .hero-overlay {
+        background:
+            linear-gradient(
+                180deg,
+                rgba(4,8,14,.22) 0%,
+                rgba(4,8,14,.45) 45%,
+                rgba(4,8,14,.86) 100%
+            );
+    }
+
+    .hero-content {
+        width: 90%;
+
+        margin: auto;
+
+        padding-top: 40px;
+
+        align-items: center;
+
+        text-align: center;
+
+        justify-content: flex-end;
+
+        padding-bottom: 105px;
+    }
+
+    .hero-badge {
+        margin-bottom: 17px;
+
+        font-size: 9px;
+
+        padding: 9px 14px;
+    }
+
+    .hero h1 {
+        margin-bottom: 17px;
+
+        font-size:
+            clamp(2.7rem, 11vw, 4rem);
+    }
+
+    .hero p {
+        max-width: 470px;
+
+        margin-bottom: 25px;
+
+        font-size: .92rem;
+
+        line-height: 1.7;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+
+        width: 100%;
+    }
+
+    .hero-btn {
+        height: 52px;
+
+        min-width: 165px;
+    }
+
+    .hero-scroll {
+        bottom: 22px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .hero-content {
+        width: 92%;
+
+        padding-bottom: 94px;
+    }
+
+    .hero h1 {
+        font-size: 2.65rem;
+    }
+
+    .hero p {
+        font-size: .87rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .hero-btn {
+        width: 100%;
+    }
+
+    .hero-scroll {
+        font-size: 8px;
+
+        letter-spacing: 1.5px;
+    }
+
+    .hero-scroll-line {
+        height: 30px;
+    }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .hero-image {
+        animation: none;
+    }
+
+    .hero-badge,
+    .hero h1,
+    .hero p,
+    .hero-buttons {
+        animation: none;
+    }
+
+    .hero-scroll-line::after {
+        animation: none;
+    }
+}
+
+
+/* =========================================================
+   TOUCH DEVICES
+========================================================= */
+
+@media (hover: none) {
+
+    .hero-btn-primary:hover,
+    .hero-btn-secondary:hover {
+        transform: none;
+    }
+}

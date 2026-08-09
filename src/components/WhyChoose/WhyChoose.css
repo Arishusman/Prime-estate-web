@@ -1,0 +1,716 @@
+/* =====================================
+   WHY CHOOSE SECTION
+===================================== */
+
+
+.why-section {
+
+    width: 100%;
+    padding: 120px 0;
+    background: #ffffff;
+    overflow: hidden;
+
+}
+
+
+
+.why-container {
+
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+    gap: 80px;
+
+}
+
+
+
+
+/* =====================================
+   LEFT CONTENT
+===================================== */
+
+
+.why-content {
+
+    max-width: 520px;
+
+}
+
+
+
+.why-tag {
+
+    display: inline-block;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    color: #b08d57;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+.why-content h2 {
+
+    font-size: 52px;
+
+    line-height: 1.15;
+
+    font-weight: 700;
+
+    color: #111827;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+.why-description {
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    color: #6b7280;
+
+    margin-bottom: 45px;
+
+}
+
+
+
+
+/* =====================================
+   FEATURES
+===================================== */
+
+
+.why-features {
+
+    display: grid;
+
+    gap: 25px;
+
+}
+
+
+
+.why-feature {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 18px;
+
+}
+
+
+
+.feature-icon {
+
+    width: 38px;
+    height: 38px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #111827;
+
+    color: white;
+
+    font-size: 18px;
+
+    flex-shrink: 0;
+
+}
+
+
+
+
+.why-feature h4 {
+
+    margin: 0 0 8px;
+
+    font-size: 18px;
+
+    color: #111827;
+
+    font-weight: 600;
+
+}
+
+
+
+.why-feature p {
+
+    margin: 0;
+
+    color: #6b7280;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+}
+
+
+
+
+
+/* =====================================
+   BUTTON
+===================================== */
+
+
+.why-btn {
+
+    margin-top: 45px;
+
+    padding: 15px 35px;
+
+    border: none;
+
+    background: #111827;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+
+}
+
+
+
+.why-btn:hover {
+
+    transform: translateY(-3px);
+
+    background: #b08d57;
+
+}
+
+
+
+
+
+/* =====================================
+   RIGHT GALLERY BASE
+===================================== */
+
+
+.why-gallery {
+
+    position: relative;
+
+    width: 100%;
+
+    min-height: 650px;
+
+}
+
+
+.why-gallery img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+/* =====================================
+   LUXURY MAGAZINE IMAGE GALLERY
+===================================== */
+
+
+.gallery-large {
+
+    position: absolute;
+
+    top: 0;
+    left: 80px;
+
+    width: 320px;
+    height: 430px;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+
+}
+
+
+
+.gallery-large img,
+.gallery-medium img,
+.gallery-small img {
+
+    transition: transform 0.6s ease;
+
+}
+
+
+
+.gallery-large:hover img,
+.gallery-medium:hover img,
+.gallery-small:hover img {
+
+    transform: scale(1.08);
+
+}
+
+
+
+
+
+/* =====================================
+   SMALL IMAGES
+===================================== */
+
+
+.gallery-small {
+
+    position: absolute;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    box-shadow: 0 20px 45px rgba(0,0,0,0.12);
+
+}
+
+
+
+
+
+/* IMAGE 2 */
+
+.img-2 {
+
+    top: 30px;
+
+    right: 0;
+
+    width: 190px;
+
+    height: 170px;
+
+}
+
+
+
+/* IMAGE 3 */
+
+.img-3 {
+
+    top: 220px;
+
+    right: 0;
+
+    width: 210px;
+
+    height: 190px;
+
+}
+
+
+
+
+/* =====================================
+   MEDIUM IMAGE
+===================================== */
+
+
+.gallery-medium {
+
+    position: absolute;
+
+    bottom: 20px;
+
+    left: 180px;
+
+    width: 270px;
+
+    height: 200px;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+
+}
+
+
+
+
+
+/* =====================================
+   BOTTOM SMALL IMAGES
+===================================== */
+
+
+.img-5 {
+
+    bottom: 0;
+
+    left: 0;
+
+    width: 150px;
+
+    height: 130px;
+
+}
+
+
+
+.img-6 {
+
+    bottom: 0;
+
+    right: 40px;
+
+    width: 150px;
+
+    height: 130px;
+
+}
+
+/* =====================================
+   SCROLL REVEAL ANIMATION
+===================================== */
+
+
+.why-content {
+
+    animation: whyLeft 1s ease forwards;
+
+}
+
+
+
+.why-gallery {
+
+    animation: whyGallery 1.2s ease forwards;
+
+}
+
+
+
+
+
+@keyframes whyLeft {
+
+
+    from {
+
+        opacity: 0;
+
+        transform: translateX(-60px);
+
+    }
+
+
+    to {
+
+        opacity: 1;
+
+        transform: translateX(0);
+
+    }
+
+}
+
+
+
+
+
+@keyframes whyGallery {
+
+
+    from {
+
+        opacity: 0;
+
+        transform: translateX(60px) scale(.95);
+
+    }
+
+
+    to {
+
+        opacity: 1;
+
+        transform: translateX(0) scale(1);
+
+    }
+
+}
+
+
+
+
+
+/* =====================================
+   IMAGE FLOAT EFFECT
+===================================== */
+
+
+.gallery-large {
+
+    animation: floatImage 5s ease-in-out infinite;
+
+}
+
+
+
+@keyframes floatImage {
+
+
+    0%,
+    100% {
+
+        transform: translateY(0);
+
+    }
+
+
+    50% {
+
+        transform: translateY(-12px);
+
+    }
+
+
+}
+
+
+
+
+
+
+/* =====================================
+   TABLET RESPONSIVE
+===================================== */
+
+
+@media(max-width:1100px){
+
+
+    .why-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 60px;
+
+    }
+
+
+
+    .why-content {
+
+        max-width: 100%;
+
+        text-align: center;
+
+    }
+
+
+
+    .why-features {
+
+        text-align: left;
+
+    }
+
+
+
+    .why-gallery {
+
+        min-height: 600px;
+
+    }
+
+
+
+}
+
+
+
+
+
+
+/* =====================================
+   MOBILE RESPONSIVE
+===================================== */
+
+
+@media(max-width:768px){
+
+
+    .why-section {
+
+        padding: 80px 0;
+
+    }
+
+
+
+    .why-container {
+
+        width: 92%;
+
+    }
+
+
+
+    .why-content h2 {
+
+
+        font-size: 38px;
+
+    }
+
+
+
+    .why-description {
+
+        font-size: 15px;
+
+    }
+
+
+
+    .why-gallery {
+
+        min-height: 520px;
+
+    }
+
+
+
+
+
+    .gallery-large {
+
+
+        left: 20px;
+
+        width: 220px;
+
+        height: 320px;
+
+
+    }
+
+
+
+
+
+    .img-2 {
+
+
+        width: 120px;
+
+        height: 120px;
+
+        right: 10px;
+
+
+    }
+
+
+
+
+
+    .img-3 {
+
+
+        width: 130px;
+
+        height: 140px;
+
+        right: 0;
+
+        top: 170px;
+
+
+    }
+
+
+
+
+
+    .gallery-medium {
+
+
+        width: 190px;
+
+        height: 150px;
+
+        left: 120px;
+
+        bottom: 40px;
+
+
+    }
+
+
+
+
+
+    .img-5 {
+
+
+        width: 100px;
+
+        height: 90px;
+
+        left: 0;
+
+    }
+
+
+
+
+
+    .img-6 {
+
+
+        width: 100px;
+
+        height: 90px;
+
+        right: 10px;
+
+    }
+
+
+
+}

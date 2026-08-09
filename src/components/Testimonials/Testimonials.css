@@ -1,0 +1,468 @@
+/* =====================================
+   TESTIMONIAL SECTION
+===================================== */
+
+
+.testimonial-section {
+
+    width: 100%;
+
+    padding: 120px 0;
+
+    background: #ffffff;
+
+    overflow: hidden;
+
+}
+
+
+
+
+
+.testimonial-container {
+
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: auto;
+
+}
+
+
+
+
+
+/* =====================================
+   HEADER
+===================================== */
+
+
+.testimonial-header {
+
+    text-align: center;
+
+    margin-bottom: 70px;
+
+}
+
+
+
+.testimonial-header span {
+
+    display: inline-block;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    color: #b08d57;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+
+
+.testimonial-header h2 {
+
+    margin: 0;
+
+    font-size: 52px;
+
+    line-height: 1.2;
+
+    color: #111827;
+
+    font-weight: 700;
+
+}
+
+
+
+
+
+/* =====================================
+   TESTIMONIAL BOX
+===================================== */
+
+
+.testimonial-box {
+
+    position: relative;
+
+    text-align: center;
+
+    padding: 70px 60px;
+
+    background: #ffffff;
+
+    border-radius: 30px;
+
+    box-shadow: 0 30px 80px rgba(0,0,0,0.08);
+
+}
+
+
+
+
+
+/* =====================================
+   QUOTE
+===================================== */
+
+
+.quote {
+
+    font-size: 100px;
+
+    line-height: 1;
+
+    color: #b08d57;
+
+    font-family: Georgia, serif;
+
+    height: 70px;
+
+}
+
+
+
+
+
+/* =====================================
+   REVIEW TEXT
+===================================== */
+
+
+.testimonial-text {
+
+    max-width: 750px;
+
+    margin: 30px auto 45px;
+
+    font-size: 24px;
+
+    line-height: 1.7;
+
+    color: #374151;
+
+    font-weight: 400;
+
+}
+
+
+
+
+
+/* =====================================
+   CLIENT IMAGE
+===================================== */
+
+
+.client-image {
+
+    width: 90px;
+
+    height: 90px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    margin-bottom: 20px;
+
+    border: 4px solid #ffffff;
+
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+
+}
+
+
+
+
+
+/* =====================================
+   CLIENT INFO
+===================================== */
+
+
+.testimonial-box h3 {
+
+    margin: 0 0 8px;
+
+    font-size: 24px;
+
+    color: #111827;
+
+    font-weight: 700;
+
+}
+
+
+
+
+
+.client-role {
+
+    margin: 0 0 18px;
+
+    color: #b08d57;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+}
+
+
+
+
+
+.rating {
+
+    font-size: 18px;
+
+    letter-spacing: 4px;
+
+}
+
+/* =====================================
+   SCROLL REVEAL ANIMATION
+===================================== */
+
+
+.testimonial-header {
+
+    animation: testimonialHeader 1s ease forwards;
+
+}
+
+
+
+.testimonial-box {
+
+    animation: testimonialBox 1.2s ease forwards;
+
+}
+
+
+
+
+
+@keyframes testimonialHeader {
+
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(-40px);
+
+    }
+
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+
+
+
+@keyframes testimonialBox {
+
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(60px) scale(.95);
+
+    }
+
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0) scale(1);
+
+    }
+
+}
+
+
+
+
+
+/* =====================================
+   QUOTE FLOAT EFFECT
+===================================== */
+
+
+.quote {
+
+    animation: quoteFloat 4s ease-in-out infinite;
+
+}
+
+
+
+@keyframes quoteFloat {
+
+
+    0%,
+    100% {
+
+        transform: translateY(0);
+
+    }
+
+
+    50% {
+
+        transform: translateY(-10px);
+
+    }
+
+
+}
+
+
+
+
+
+/* =====================================
+   CLIENT IMAGE HOVER
+===================================== */
+
+
+.client-image {
+
+    transition: .5s ease;
+
+}
+
+
+
+.client-image:hover {
+
+    transform: scale(1.1);
+
+}
+
+
+
+
+
+/* =====================================
+   TABLET RESPONSIVE
+===================================== */
+
+
+@media(max-width:900px){
+
+
+    .testimonial-box {
+
+        padding: 60px 40px;
+
+    }
+
+
+
+    .testimonial-text {
+
+        font-size: 20px;
+
+    }
+
+
+
+    .testimonial-header h2 {
+
+        font-size: 42px;
+
+    }
+
+
+}
+
+
+
+
+
+/* =====================================
+   MOBILE RESPONSIVE
+===================================== */
+
+
+@media(max-width:600px){
+
+
+    .testimonial-section {
+
+        padding: 80px 0;
+
+    }
+
+
+
+    .testimonial-header h2 {
+
+        font-size: 36px;
+
+    }
+
+
+
+    .testimonial-box {
+
+        padding: 45px 20px;
+
+        border-radius: 20px;
+
+    }
+
+
+
+    .quote {
+
+        font-size: 80px;
+
+    }
+
+
+
+    .testimonial-text {
+
+        font-size: 17px;
+
+        line-height: 1.6;
+
+    }
+
+
+
+    .client-image {
+
+        width: 75px;
+
+        height: 75px;
+
+    }
+
+
+
+}

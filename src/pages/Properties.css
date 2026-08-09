@@ -1,0 +1,834 @@
+/* =========================================================
+   PRIME ESTATE
+   PROPERTIES PAGE
+========================================================= */
+
+.properties-page {
+    min-height: 100vh;
+    background: #ffffff;
+    color: #111827;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.properties-hero {
+    position: relative;
+    min-height: 500px;
+
+    display: flex;
+    align-items: flex-end;
+
+    padding: 100px 6% 75px;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(8, 15, 28, .96) 0%,
+            rgba(8, 15, 28, .82) 45%,
+            rgba(8, 15, 28, .48) 100%
+        ),
+        url("/images/properties/property-1.webp")
+        center / cover no-repeat;
+}
+
+
+.properties-hero::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(8, 15, 28, .55),
+            transparent 55%
+        );
+
+    pointer-events: none;
+}
+
+
+.properties-hero-content {
+    position: relative;
+    z-index: 2;
+
+    width: min(1200px, 100%);
+
+    margin: 0 auto;
+}
+
+
+.properties-eyebrow {
+    display: block;
+
+    margin-bottom: 20px;
+
+    color: #93c5fd;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+
+.properties-hero h1 {
+    max-width: 850px;
+
+    margin: 0 0 22px;
+
+    color: #ffffff;
+
+    font-size:
+        clamp(3.2rem, 7vw, 6.5rem);
+
+    line-height: .95;
+
+    letter-spacing: -.065em;
+}
+
+
+.properties-hero h1 span {
+    display: block;
+
+    color: #93c5fd;
+}
+
+
+.properties-hero p {
+    max-width: 650px;
+
+    margin: 0;
+
+    color: rgba(255,255,255,.68);
+
+    font-size: 1rem;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   LISTING SECTION
+========================================================= */
+
+.properties-section {
+    padding: 110px 6% 120px;
+}
+
+
+.properties-container {
+    width: min(1200px, 100%);
+
+    margin: auto;
+}
+
+
+/* =========================================================
+   SECTION HEADER
+========================================================= */
+
+.properties-heading {
+    display: flex;
+
+    align-items: flex-end;
+    justify-content: space-between;
+
+    gap: 40px;
+
+    margin-bottom: 45px;
+}
+
+
+.properties-label {
+    display: block;
+
+    margin-bottom: 13px;
+
+    color: #2563eb;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 2.5px;
+}
+
+
+.properties-heading h2 {
+    margin: 0;
+
+    color: #111827;
+
+    font-size:
+        clamp(2.5rem, 5vw, 4.5rem);
+
+    line-height: .95;
+
+    letter-spacing: -.06em;
+}
+
+
+.properties-count {
+    display: flex;
+
+    align-items: baseline;
+
+    gap: 10px;
+
+    padding-bottom: 5px;
+}
+
+
+.properties-count strong {
+    color: #111827;
+
+    font-size: 2rem;
+
+    font-weight: 700;
+}
+
+
+.properties-count span {
+    color: #94a3b8;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   FILTER
+========================================================= */
+
+.properties-filter {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 45px;
+
+    padding-bottom: 17px;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    overflow-x: auto;
+
+    scrollbar-width: none;
+}
+
+
+.properties-filter::-webkit-scrollbar {
+    display: none;
+}
+
+
+.properties-filter button {
+    flex-shrink: 0;
+
+    padding: 11px 18px;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 999px;
+
+    background: #ffffff;
+
+    color: #64748b;
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .25s ease;
+}
+
+
+.properties-filter button:hover {
+    border-color: #bfdbfe;
+
+    color: #2563eb;
+}
+
+
+.properties-filter .filter-active {
+    border-color: #111827;
+
+    background: #111827;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   PROPERTY GRID
+========================================================= */
+
+.properties-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 28px;
+}
+
+
+/* =========================================================
+   PROPERTY CARD
+========================================================= */
+
+.property-card {
+    overflow: hidden;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 10px 35px
+        rgba(15,23,42,.04);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+}
+
+
+.property-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 25px 60px
+        rgba(15,23,42,.10);
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.property-image {
+    position: relative;
+
+    height: 390px;
+
+    overflow: hidden;
+
+    background: #e5e7eb;
+}
+
+
+.property-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition:
+        transform .7s cubic-bezier(.2,.7,.2,1);
+}
+
+
+.property-card:hover .property-image img {
+    transform: scale(1.055);
+}
+
+
+.property-image-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(0,0,0,.45),
+            transparent 45%
+        );
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   BADGES
+========================================================= */
+
+.property-featured,
+.property-type {
+    position: absolute;
+
+    z-index: 2;
+
+    top: 18px;
+
+    padding: 8px 12px;
+
+    border-radius: 5px;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+.property-featured {
+    left: 18px;
+
+    background: #ffffff;
+
+    color: #111827;
+}
+
+
+.property-type {
+    right: 18px;
+
+    border: 1px solid rgba(255,255,255,.3);
+
+    background: rgba(0,0,0,.28);
+
+    color: #ffffff;
+
+    backdrop-filter: blur(10px);
+}
+
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.property-card-content {
+    padding: 27px 28px 25px;
+}
+
+
+.property-location {
+    margin-bottom: 9px;
+
+    color: #2563eb;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.3px;
+
+    text-transform: uppercase;
+}
+
+
+.property-card h3 {
+    margin: 0 0 12px;
+
+    color: #111827;
+
+    font-size: 1.55rem;
+
+    line-height: 1.15;
+
+    letter-spacing: -.035em;
+}
+
+
+.property-price {
+    display: block;
+
+    margin-bottom: 22px;
+
+    color: #111827;
+
+    font-size: 1.15rem;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   META
+========================================================= */
+
+.property-meta {
+    display: flex;
+
+    align-items: center;
+
+    gap: 0;
+
+    padding: 16px 0;
+
+    border-top: 1px solid #eef0f3;
+
+    border-bottom: 1px solid #eef0f3;
+}
+
+
+.property-meta span {
+    min-width: 0;
+
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+
+    color: #94a3b8;
+
+    font-size: 9px;
+
+    text-transform: uppercase;
+
+    letter-spacing: .8px;
+}
+
+
+.property-meta span + span {
+    padding-left: 17px;
+
+    border-left: 1px solid #e5e7eb;
+}
+
+
+.property-meta strong {
+    color: #334155;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    text-transform: none;
+
+    letter-spacing: 0;
+}
+
+
+/* =========================================================
+   DETAILS LINK
+========================================================= */
+
+.property-details-link {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-top: 19px;
+
+    color: #111827;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition: color .25s ease;
+}
+
+
+.property-details-link span {
+    font-size: 19px;
+
+    transition:
+        transform .25s ease;
+}
+
+
+.property-details-link:hover {
+    color: #2563eb;
+}
+
+
+.property-details-link:hover span {
+    transform: translateX(5px);
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.properties-cta {
+    width: min(1200px, 88%);
+
+    margin: 0 auto 110px;
+
+    padding: 65px 70px;
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            120deg,
+            #111827,
+            #1e293b
+        );
+}
+
+
+.properties-cta-inner {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 50px;
+}
+
+
+.properties-cta-inner > div {
+    max-width: 680px;
+}
+
+
+.properties-cta-inner span {
+    display: block;
+
+    margin-bottom: 14px;
+
+    color: #93c5fd;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+.properties-cta h2 {
+    margin: 0 0 15px;
+
+    color: #ffffff;
+
+    font-size:
+        clamp(2.2rem, 4vw, 3.8rem);
+
+    line-height: 1;
+
+    letter-spacing: -.055em;
+}
+
+
+.properties-cta p {
+    max-width: 580px;
+
+    margin: 0;
+
+    color: rgba(255,255,255,.62);
+
+    font-size: .95rem;
+
+    line-height: 1.75;
+}
+
+
+.properties-cta-button {
+    flex-shrink: 0;
+
+    min-height: 55px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 0 28px;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #111827;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition: .3s ease;
+}
+
+
+.properties-cta-button:hover {
+    background: #2563eb;
+
+    color: #ffffff;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .properties-hero {
+        min-height: 470px;
+
+        padding:
+            90px 6% 65px;
+    }
+
+
+    .properties-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .property-image {
+        height: 440px;
+    }
+
+
+    .properties-heading {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+
+    .properties-cta-inner {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .properties-hero {
+        min-height: 460px;
+
+        padding:
+            80px 5% 55px;
+    }
+
+
+    .properties-hero h1 {
+        font-size: 3.35rem;
+    }
+
+
+    .properties-hero p {
+        font-size: .9rem;
+
+        line-height: 1.7;
+    }
+
+
+    .properties-section {
+        padding:
+            75px 5% 85px;
+    }
+
+
+    .properties-heading h2 {
+        font-size: 2.8rem;
+    }
+
+
+    .properties-count {
+        display: none;
+    }
+
+
+    .property-image {
+        height: 330px;
+    }
+
+
+    .property-card-content {
+        padding:
+            23px 21px 22px;
+    }
+
+
+    .property-card h3 {
+        font-size: 1.35rem;
+    }
+
+
+    .properties-cta {
+        width: 90%;
+
+        margin-bottom: 75px;
+
+        padding:
+            45px 28px;
+    }
+
+
+    .properties-cta-button {
+        width: 100%;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .properties-hero h1 {
+        font-size: 2.8rem;
+    }
+
+
+    .property-image {
+        height: 280px;
+    }
+
+
+    .property-meta span {
+        font-size: 8px;
+    }
+
+
+    .property-meta strong {
+        font-size: 11px;
+    }
+
+}

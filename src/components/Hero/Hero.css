@@ -626,118 +626,180 @@
 
 
 
-/* =========================================
-   HERO ACTION BUTTONS
-========================================= */
+/* =====================================================
+   PREMIUM HERO BUTTONS
+===================================================== */
 
-.hero-actions {
+.hero-buttons {
     display: flex;
     align-items: center;
-    gap: 14px;
-    margin-top: 30px;
+    gap: 16px;
+    margin-top: 32px;
 }
 
-/* Both buttons */
-.hero-actions .primary-btn,
-.hero-actions .secondary-btn {
+
+/* ---------- BASE BUTTON ---------- */
+
+.hero-btn {
+    position: relative;
     display: inline-flex;
     align-items: center;
     justify-content: center;
 
-    width: auto;
-    min-width: 0;
-    height: 52px;
-    padding: 0 25px;
+    min-width: 205px;
+    height: 58px;
+    padding: 0 30px;
 
-    border-radius: 7px;
+    border-radius: 4px;
 
-    font-family: inherit;
-    font-size: 14px;
+    font-family: "Inter", "Helvetica Neue", sans-serif;
+    font-size: 13px;
     font-weight: 600;
-    line-height: 1;
+    letter-spacing: 0.8px;
+    text-decoration: none;
 
-    text-decoration: none !important;
-    white-space: nowrap;
-
-    cursor: pointer;
+    overflow: hidden;
     transition:
-        background-color 0.25s ease,
-        color 0.25s ease,
-        border-color 0.25s ease,
-        transform 0.25s ease;
+        background-color 0.35s ease,
+        border-color 0.35s ease,
+        color 0.35s ease,
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
 }
 
-/* =========================================
-   EXPLORE PROPERTIES
-========================================= */
 
-.hero-actions .primary-btn {
+/* =====================================================
+   EXPLORE PROPERTIES
+===================================================== */
+
+.hero-btn-primary {
+    color: #111827;
     background: #ffffff;
-    color: #101722;
 
     border: 1px solid #ffffff;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.18);
 }
 
-.hero-actions .primary-btn:hover {
-    background: transparent;
+
+/* Elegant shine effect */
+
+.hero-btn-primary::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: -120%;
+
+    width: 80%;
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.55),
+        transparent
+    );
+
+    transform: skewX(-20deg);
+
+    transition: left 0.65s ease;
+}
+
+
+.hero-btn-primary:hover::before {
+    left: 140%;
+}
+
+
+.hero-btn-primary:hover {
     color: #ffffff;
 
-    border-color: rgba(255, 255, 255, 0.8);
-
-    transform: translateY(-2px);
-}
-
-/* =========================================
-   CONTACT AGENT
-========================================= */
-
-.hero-actions .secondary-btn {
-    background: rgba(255, 255, 255, 0.04);
-    color: #ffffff;
-
-    border: 1px solid rgba(255, 255, 255, 0.45);
-
-    backdrop-filter: blur(4px);
-}
-
-.hero-actions .secondary-btn:hover {
-    background: #ffffff;
-    color: #101722;
+    background: #111827;
 
     border-color: #ffffff;
 
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.28);
 }
 
-/* =========================================
-   MOBILE
-========================================= */
 
-@media (max-width: 600px) {
+/* =====================================================
+   CONTACT AGENT
+===================================================== */
 
-    .hero-actions {
+.hero-btn-secondary {
+    color: #ffffff;
+
+    background: rgba(255, 255, 255, 0.06);
+
+    border: 1px solid rgba(255, 255, 255, 0.55);
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+
+.hero-btn-secondary:hover {
+    color: #111827;
+
+    background: #ffffff;
+
+    border-color: #ffffff;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =====================================================
+   ACTIVE / CLICK EFFECT
+===================================================== */
+
+.hero-btn:active {
+    transform: translateY(-1px);
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .hero-buttons {
         gap: 12px;
-        margin-top: 24px;
     }
 
-    .hero-actions .primary-btn,
-    .hero-actions .secondary-btn {
-        height: 48px;
-        padding: 0 20px;
-        font-size: 13px;
+    .hero-btn {
+        min-width: 175px;
+        height: 54px;
+        padding: 0 22px;
     }
 }
 
-@media (max-width: 420px) {
 
-    .hero-actions {
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 520px) {
+
+    .hero-buttons {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: stretch;
+        width: 100%;
+        max-width: 320px;
     }
 
-    .hero-actions .primary-btn,
-    .hero-actions .secondary-btn {
-        width: auto;
-        min-width: 180px;
+    .hero-btn {
+        width: 100%;
+        min-width: 0;
+        height: 54px;
     }
 }

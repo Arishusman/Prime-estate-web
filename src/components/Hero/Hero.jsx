@@ -1,27 +1,45 @@
+import { Link } from "react-router-dom";
 import "./Hero.css";
 
 function Hero() {
+    const heroImage =
+        `${import.meta.env.BASE_URL}images/hero/villa-hero.webp`;
+
     return (
         <section className="hero">
 
-            {/* Cinematic Villa Background */}
+            {/* =====================================
+                CINEMATIC VILLA BACKGROUND
+            ===================================== */}
+
             <div className="hero-background">
+
                 <img
-                    src="/images/hero/villa-hero.webp"
+                    src={heroImage}
                     alt="Luxury Villa"
                     className="hero-image"
                 />
+
             </div>
 
-            {/* Dark Cinematic Overlay */}
+
+            {/* =====================================
+                DARK CINEMATIC OVERLAY
+            ===================================== */}
+
             <div className="hero-overlay"></div>
 
-            {/* Hero Content */}
+
+            {/* =====================================
+                HERO CONTENT
+            ===================================== */}
+
             <div className="hero-content">
 
                 <span className="hero-badge">
                     Premium Real Estate Collection
                 </span>
+
 
                 <h1>
                     Find Your
@@ -29,32 +47,47 @@ function Hero() {
                     <span>Dream Home</span>
                 </h1>
 
+
                 <p>
                     Discover exceptional homes designed for
                     modern living, refined comfort and timeless
                     elegance.
                 </p>
 
+
                 <div className="hero-buttons">
 
-                    <button className="hero-btn hero-btn-primary">
+                    <Link
+                        to="/properties"
+                        className="hero-btn hero-btn-primary"
+                    >
                         Explore Properties
-                    </button>
+                    </Link>
 
-                    <button className="hero-btn hero-btn-secondary">
+
+                    <Link
+                        to="/contact"
+                        className="hero-btn hero-btn-secondary"
+                    >
                         Contact Agent
-                    </button>
+                    </Link>
 
                 </div>
 
             </div>
 
-            {/* Scroll Indicator */}
+
+            {/* =====================================
+                SCROLL INDICATOR
+            ===================================== */}
+
             <div className="hero-scroll">
 
                 <span className="hero-scroll-line"></span>
 
-                <span>Scroll to Explore</span>
+                <span>
+                    Scroll to Explore
+                </span>
 
             </div>
 

@@ -11,7 +11,7 @@ const properties = [
         beds: 5,
         baths: 6,
         area: "5,500 sq ft",
-        image: "/images/properties/property-1.webp",
+        image: `${import.meta.env.BASE_URL}images/properties/property-1.webp`,
         featured: true,
     },
 
@@ -24,7 +24,7 @@ const properties = [
         beds: 4,
         baths: 4,
         area: "3,200 sq ft",
-        image: "/images/properties/property-3.webp",
+        image: `${import.meta.env.BASE_URL}images/properties/property-3.webp`,
         featured: true,
     },
 
@@ -37,29 +37,26 @@ const properties = [
         beds: 4,
         baths: 5,
         area: "4,200 sq ft",
-        image: "/images/properties/property-5.webp",
+        image: `${import.meta.env.BASE_URL}images/properties/property-5.webp`,
         featured: true,
     },
 
     {
-    id: "contemporary-residence",
-    title: "Contemporary Residence",
-    location: "Gulberg, Lahore",
-    price: "PKR 9.8 Crore",
-    type: "House",
-    beds: 4,
-    baths: 5,
-    area: "3,800 sq ft",
-    image: "/images/properties/property-2.webp",
-    featured: false,
-},
+        id: "contemporary-residence",
+        title: "Contemporary Residence",
+        location: "Gulberg, Lahore",
+        price: "PKR 9.8 Crore",
+        type: "House",
+        beds: 4,
+        baths: 5,
+        area: "3,800 sq ft",
+        image: `${import.meta.env.BASE_URL}images/properties/property-2.webp`,
+        featured: false,
+    },
 ];
 
-
 function FeaturedProperties() {
-
     return (
-
         <section className="featured-properties">
 
             <div className="featured-container">
@@ -111,11 +108,9 @@ function FeaturedProperties() {
                                 />
 
                                 {property.featured && (
-
                                     <span className="property-badge">
                                         Featured
                                     </span>
-
                                 )}
 
                             </div>
@@ -141,7 +136,6 @@ function FeaturedProperties() {
                                 <div className="property-info">
 
                                     <div>
-
                                         <strong>
                                             {property.beds}
                                         </strong>
@@ -149,12 +143,10 @@ function FeaturedProperties() {
                                         <span>
                                             Beds
                                         </span>
-
                                     </div>
 
 
                                     <div>
-
                                         <strong>
                                             {property.baths}
                                         </strong>
@@ -162,12 +154,10 @@ function FeaturedProperties() {
                                         <span>
                                             Baths
                                         </span>
-
                                     </div>
 
 
                                     <div>
-
                                         <strong>
                                             {property.area}
                                         </strong>
@@ -175,7 +165,6 @@ function FeaturedProperties() {
                                         <span>
                                             Area
                                         </span>
-
                                     </div>
 
                                 </div>
@@ -189,17 +178,12 @@ function FeaturedProperties() {
                                         {property.price}
                                     </h4>
 
-
                                     <Link
                                         to={`/properties/${property.id}`}
                                         className="details-btn"
                                     >
                                         View Details
-
-                                        <span>
-                                            →
-                                        </span>
-
+                                        <span>→</span>
                                     </Link>
 
                                 </div>
@@ -224,6 +208,7 @@ function FeaturedProperties() {
                         className="view-all-btn"
                     >
                         View All Properties
+                        <span>→</span>
                     </Link>
 
                 </div>
@@ -231,10 +216,7 @@ function FeaturedProperties() {
             </div>
 
         </section>
-
     );
-
 }
-
 
 export default FeaturedProperties;

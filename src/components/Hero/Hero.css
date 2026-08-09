@@ -243,106 +243,6 @@
 
 
 /* =========================================================
-   BUTTONS
-========================================================= */
-
-.hero-buttons {
-    display: flex;
-
-    align-items: center;
-
-    gap: 14px;
-
-    flex-wrap: wrap;
-
-    animation: heroFadeUp 1s
-        .28s
-        cubic-bezier(.22,.61,.36,1)
-        both;
-}
-
-
-/* Base */
-
-.hero-btn {
-    height: 56px;
-
-    min-width: 180px;
-
-    padding: 0 27px;
-
-    border-radius: 10px;
-
-    font-family: inherit;
-
-    font-size: 14px;
-
-    font-weight: 600;
-
-    cursor: pointer;
-
-    transition:
-        transform .35s ease,
-        background .35s ease,
-        border-color .35s ease,
-        box-shadow .35s ease;
-
-    outline: none;
-}
-
-
-/* Primary */
-
-.hero-btn-primary {
-    border: 1px solid #ffffff;
-
-    background: #ffffff;
-
-    color: #111827;
-
-    box-shadow:
-        0 15px 35px
-        rgba(0,0,0,.22);
-}
-
-.hero-btn-primary:hover {
-    transform: translateY(-4px);
-
-    background: #f1f4f8;
-
-    box-shadow:
-        0 20px 45px
-        rgba(0,0,0,.3);
-}
-
-
-/* Secondary */
-
-.hero-btn-secondary {
-    border: 1px solid
-        rgba(255,255,255,.32);
-
-    background:
-        rgba(255,255,255,.08);
-
-    color: #ffffff;
-
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-}
-
-.hero-btn-secondary:hover {
-    transform: translateY(-4px);
-
-    background:
-        rgba(255,255,255,.16);
-
-    border-color:
-        rgba(255,255,255,.5);
-}
-
-
-/* =========================================================
    CONTENT ENTRY
 ========================================================= */
 
@@ -625,86 +525,148 @@
 }
 
 
-
 /* =====================================================
-   PREMIUM HERO BUTTONS
+   PRIME ESTATE — PREMIUM HERO BUTTONS
+   Luxury / Minimal / Cinematic
 ===================================================== */
 
 .hero-buttons {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 14px;
     margin-top: 32px;
 }
 
 
-/* ---------- BASE BUTTON ---------- */
+/* =====================================================
+   BASE BUTTON
+===================================================== */
 
 .hero-btn {
     position: relative;
+
     display: inline-flex;
     align-items: center;
     justify-content: center;
 
     min-width: 205px;
     height: 58px;
-    padding: 0 30px;
 
-    border-radius: 4px;
+    padding: 0 28px;
 
-    font-family: "Inter", "Helvetica Neue", sans-serif;
+    border-radius: 5px;
+
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
     font-size: 13px;
     font-weight: 600;
-    letter-spacing: 0.8px;
+
+    letter-spacing: 0.5px;
     text-decoration: none;
 
+    cursor: pointer;
+
     overflow: hidden;
+
     transition:
-        background-color 0.35s ease,
-        border-color 0.35s ease,
-        color 0.35s ease,
-        transform 0.35s ease,
-        box-shadow 0.35s ease;
+        transform 0.4s cubic-bezier(.22,.61,.36,1),
+        background-color 0.4s ease,
+        border-color 0.4s ease,
+        color 0.4s ease,
+        box-shadow 0.4s ease;
+
+    isolation: isolate;
 }
 
 
 /* =====================================================
-   EXPLORE PROPERTIES
+   BUTTON INNER SHINE
 ===================================================== */
 
-.hero-btn-primary {
-    color: #111827;
-    background: #ffffff;
+.hero-btn::before {
+    content: "";
 
-    border: 1px solid #ffffff;
+    position: absolute;
+    top: 0;
+    left: -130%;
 
-    box-shadow:
-        0 8px 25px rgba(0, 0, 0, 0.18);
+    width: 75%;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,255,255,.45),
+            transparent
+        );
+
+    transform: skewX(-22deg);
+
+    transition: left .7s cubic-bezier(.22,.61,.36,1);
+
+    z-index: -1;
 }
 
 
-/* Elegant shine effect */
+/* =====================================================
+   EXPLORE PROPERTIES — PREMIUM WHITE
+===================================================== */
 
-.hero-btn-primary::before {
-    content: "";
-    position: absolute;
+.hero-btn-primary {
+    color: #10151d;
 
-    top: 0;
-    left: -120%;
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff 0%,
+            #f4f6f8 100%
+        );
 
-    width: 80%;
-    height: 100%;
+    border: 1px solid rgba(255,255,255,.95);
 
-    background: linear-gradient(
-        90deg,
-        transparent,
-        rgba(255, 255, 255, 0.55),
-        transparent
-    );
+    box-shadow:
+        0 12px 30px rgba(0,0,0,.20),
+        inset 0 1px 0 rgba(255,255,255,.9);
+}
 
-    transform: skewX(-20deg);
 
-    transition: left 0.65s ease;
+/* Arrow */
+
+.hero-btn-primary::after {
+    content: "→";
+
+    margin-left: 13px;
+
+    font-size: 17px;
+    font-weight: 400;
+
+    line-height: 1;
+
+    transition:
+        transform .35s ease,
+        margin-left .35s ease;
+}
+
+
+/* Hover */
+
+.hero-btn-primary:hover {
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            135deg,
+            #171c24 0%,
+            #0d1118 100%
+        );
+
+    border-color: rgba(255,255,255,.75);
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 18px 40px rgba(0,0,0,.34),
+        0 0 0 1px rgba(255,255,255,.05);
 }
 
 
@@ -713,56 +675,95 @@
 }
 
 
-.hero-btn-primary:hover {
-    color: #ffffff;
+.hero-btn-primary:hover::after {
+    margin-left: 17px;
 
-    background: #111827;
-
-    border-color: #ffffff;
-
-    transform: translateY(-3px);
-
-    box-shadow:
-        0 12px 30px rgba(0, 0, 0, 0.28);
+    transform: translateX(3px);
 }
 
 
 /* =====================================================
-   CONTACT AGENT
+   CONTACT AGENT — GLASS LUXURY
 ===================================================== */
 
 .hero-btn-secondary {
     color: #ffffff;
 
-    background: rgba(255, 255, 255, 0.06);
+    background:
+        rgba(255,255,255,.055);
 
-    border: 1px solid rgba(255, 255, 255, 0.55);
+    border: 1px solid rgba(255,255,255,.38);
 
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.12),
+        0 10px 30px rgba(0,0,0,.12);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 }
 
 
-.hero-btn-secondary:hover {
-    color: #111827;
+/* Arrow */
 
-    background: #ffffff;
+.hero-btn-secondary::after {
+    content: "↗";
+
+    margin-left: 12px;
+
+    font-size: 15px;
+    font-weight: 400;
+
+    transition:
+        transform .35s ease,
+        margin-left .35s ease;
+}
+
+
+/* Hover */
+
+.hero-btn-secondary:hover {
+    color: #11161d;
+
+    background: rgba(255,255,255,.96);
 
     border-color: #ffffff;
 
-    transform: translateY(-3px);
+    transform: translateY(-4px);
 
     box-shadow:
-        0 12px 30px rgba(0, 0, 0, 0.25);
+        0 18px 40px rgba(0,0,0,.30);
+}
+
+
+.hero-btn-secondary:hover::before {
+    left: 140%;
+}
+
+
+.hero-btn-secondary:hover::after {
+    margin-left: 16px;
+
+    transform:
+        translate(2px,-2px);
 }
 
 
 /* =====================================================
-   ACTIVE / CLICK EFFECT
+   ACTIVE / CLICK
 ===================================================== */
 
 .hero-btn:active {
     transform: translateY(-1px);
+}
+
+
+/* =====================================================
+   FOCUS — ACCESSIBILITY
+===================================================== */
+
+.hero-btn:focus-visible {
+    outline: 2px solid rgba(255,255,255,.85);
+    outline-offset: 4px;
 }
 
 
@@ -774,12 +775,16 @@
 
     .hero-buttons {
         gap: 12px;
+        margin-top: 26px;
     }
 
     .hero-btn {
-        min-width: 175px;
+        min-width: 180px;
         height: 54px;
+
         padding: 0 22px;
+
+        font-size: 12px;
     }
 }
 
@@ -791,15 +796,55 @@
 @media (max-width: 520px) {
 
     .hero-buttons {
+        width: 100%;
+        max-width: 330px;
+
         flex-direction: column;
         align-items: stretch;
-        width: 100%;
-        max-width: 320px;
+
+        gap: 11px;
+
+        margin-top: 24px;
     }
 
     .hero-btn {
         width: 100%;
         min-width: 0;
+
         height: 54px;
+
+        padding: 0 20px;
+    }
+}
+
+
+/* =====================================================
+   TOUCH DEVICES
+===================================================== */
+
+@media (hover: none) {
+
+    .hero-btn-primary:hover,
+    .hero-btn-secondary:hover {
+        transform: none;
+    }
+
+    .hero-btn-primary:hover::before,
+    .hero-btn-secondary:hover::before {
+        left: -130%;
+    }
+}
+
+
+/* =====================================================
+   REDUCED MOTION
+===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .hero-btn,
+    .hero-btn::before,
+    .hero-btn::after {
+        transition: none;
     }
 }

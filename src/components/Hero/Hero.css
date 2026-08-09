@@ -623,3 +623,101 @@
         transform: none;
     }
 }
+
+
+
+/* =========================================
+   HERO ACTION BUTTONS
+========================================= */
+
+.hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 32px;
+    flex-wrap: wrap;
+}
+
+/* Common Button Style */
+.hero-actions a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 54px;
+    padding: 0 28px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+/* =========================================
+   EXPLORE PROPERTIES
+========================================= */
+
+.hero-actions .primary-btn {
+    background: #ffffff;
+    color: #0b1f33;
+    border: 1px solid #ffffff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.hero-actions .primary-btn:hover {
+    background: transparent;
+    color: #ffffff;
+    border-color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   CONTACT AGENT
+========================================= */
+
+.hero-actions .secondary-btn {
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.75);
+}
+
+.hero-actions .secondary-btn:hover {
+    background: #ffffff;
+    color: #0b1f33;
+    border-color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .hero-actions {
+        gap: 12px;
+        margin-top: 24px;
+    }
+
+    .hero-actions a {
+        min-height: 50px;
+        padding: 0 22px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .hero-actions {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-actions a {
+        width: 100%;
+        min-height: 52px;
+    }
+}

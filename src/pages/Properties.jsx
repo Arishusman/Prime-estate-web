@@ -11,7 +11,7 @@ const properties = [
         beds: 5,
         baths: 6,
         area: "5,500 sq ft",
-        image: "${import.meta.env.BASE_URL}images/properties/property-1.webp",
+        image: `${import.meta.env.BASE_URL}images/properties/property-1.webp`,
         featured: true,
     },
 
@@ -24,7 +24,7 @@ const properties = [
         beds: 4,
         baths: 5,
         area: "3,800 sq ft",
-        image: "${import.meta.env.BASE_URL}images/properties/property-2.webp",
+        image: `${import.meta.env.BASE_URL}images/properties/property-2.webp`,
         featured: false,
     },
 
@@ -37,7 +37,7 @@ const properties = [
         beds: 4,
         baths: 4,
         area: "3,200 sq ft",
-        image: "${import.meta.env.BASE_URL}images/properties/property-3.webp",
+        image: `${import.meta.env.BASE_URL}images/properties/property-3.webp`,
         featured: true,
     },
 
@@ -50,7 +50,7 @@ const properties = [
         beds: 3,
         baths: 3,
         area: "2,100 sq ft",
-        image: "${import.meta.env.BASE_URL}images/properties/property-4.webp",
+        image: `${import.meta.env.BASE_URL}images/properties/property-4.webp`,
         featured: false,
     },
 
@@ -63,7 +63,7 @@ const properties = [
         beds: 4,
         baths: 5,
         area: "4,200 sq ft",
-        image: "${import.meta.env.BASE_URL}images/properties/property-5.webp",
+        image: `${import.meta.env.BASE_URL}images/properties/property-5.webp`,
         featured: true,
     },
 
@@ -76,7 +76,7 @@ const properties = [
         beds: 5,
         baths: 5,
         area: "4,000 sq ft",
-        image: "${import.meta.env.BASE_URL}images/properties/property-6.webp",
+        image: `${import.meta.env.BASE_URL}images/properties/property-6.webp`,
         featured: false,
     },
 ];

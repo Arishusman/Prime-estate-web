@@ -14,7 +14,7 @@ const properties = [
         area: "5,500 sq ft",
         parking: "3 Cars",
 
-        image: "${import.meta.env.BASE_URL}images/properties/property-1.webp",
+        image: `${import.meta.env.BASE_URL}images/properties/property-1.webp`,
 
         description:
             "A beautifully designed modern luxury villa created for sophisticated family living. This exceptional residence combines contemporary architecture, generous living spaces and premium finishes throughout the home.",
@@ -43,7 +43,7 @@ const properties = [
         area: "3,800 sq ft",
         parking: "2 Cars",
 
-        image: "${import.meta.env.BASE_URL}images/properties/property-2.webp",
+        image: `${import.meta.env.BASE_URL}images/properties/property-2.webp`,
 
         description:
             "A refined contemporary residence featuring elegant interiors, spacious bedrooms and carefully planned living areas. Ideal for families looking for comfort, privacy and modern design.",
@@ -72,7 +72,7 @@ const properties = [
         area: "3,200 sq ft",
         parking: "2 Cars",
 
-        image: "${import.meta.env.BASE_URL}images/properties/property-3.webp",
+        image: `${import.meta.env.BASE_URL}images/properties/property-3.webp`,
 
         description:
             "A premium family home offering a balanced combination of modern design, practical spaces and a peaceful residential environment.",
@@ -101,7 +101,7 @@ const properties = [
         area: "2,100 sq ft",
         parking: "2 Cars",
 
-        image: "${import.meta.env.BASE_URL}images/properties/property-4.webp",
+        image: `${import.meta.env.BASE_URL}images/properties/property-4.webp`,
 
         description:
             "An elegant executive apartment with sophisticated interiors, panoramic views and premium residential amenities.",
@@ -130,7 +130,7 @@ const properties = [
         area: "4,200 sq ft",
         parking: "3 Cars",
 
-        image: "${import.meta.env.BASE_URL}images/properties/property-5.webp",
+        image: `${import.meta.env.BASE_URL}images/properties/property-5.webp`,
 
         description:
             "A sophisticated skyline penthouse designed for elevated urban living, featuring expansive interiors, premium finishes and exceptional city views.",
@@ -159,7 +159,7 @@ const properties = [
         area: "4,000 sq ft",
         parking: "2 Cars",
 
-        image: "${import.meta.env.BASE_URL}images/properties/property-6.webp",
+        image: `${import.meta.env.BASE_URL}images/properties/property-6.webp`,
 
         description:
             "A peaceful private garden villa offering generous living spaces, elegant interiors and a beautifully landscaped outdoor environment.",

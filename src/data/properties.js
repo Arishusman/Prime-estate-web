@@ -15,7 +15,7 @@ baths:4,
 
 area:"4,850 sqft",
 
-image:"${import.meta.env.BASE_URL}images/properties/property-1.webp",
+image:`${import.meta.env.BASE_URL}images/properties/property-1.webp`,
 
 featured:true
 },
@@ -35,7 +35,7 @@ baths:3,
 
 area:"3,750 sqft",
 
-image:"${import.meta.env.BASE_URL}images/properties/property-2.webp",
+image:`${import.meta.env.BASE_URL}images/properties/property-2.webp`,
 
 featured:true
 },
@@ -55,7 +55,7 @@ baths:3,
 
 area:"2,950 sqft",
 
-image:"${import.meta.env.BASE_URL}images/properties/property-3.webp",
+image:`${import.meta.env.BASE_URL}images/properties/property-3.webp`,
 
 featured:true
 },
@@ -75,7 +75,7 @@ baths:2,
 
 area:"2,150 sqft",
 
-image:"${import.meta.env.BASE_URL}images/properties/property-4.webp",
+image:`${import.meta.env.BASE_URL}images/properties/property-4.webp`,
 
 featured:true
 },
@@ -95,7 +95,7 @@ baths:5,
 
 area:"5,650 sqft",
 
-image:"${import.meta.env.BASE_URL}images/properties/property-5.webp",
+image:`${import.meta.env.BASE_URL}images/properties/property-5.webp`,
 
 featured:true
 },
@@ -117,7 +117,7 @@ area:"4,250 sqft",
 
 featured:true,
 
-image:"${import.meta.env.BASE_URL}images/properties/property-6.webp",
+image:`${import.meta.env.BASE_URL}images/properties/property-6.webp`,
 
 }
 

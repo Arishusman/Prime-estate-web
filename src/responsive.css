@@ -1476,3 +1476,15 @@ textarea {
     }
 
 }
+
+/* =========================================
+   RESPONSIVE TEST
+========================================= */
+
+@media (max-width: 768px) {
+
+    body {
+        outline: 8px solid red !important;
+    }
+
+}

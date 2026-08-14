@@ -1,5 +1,4 @@
 import "./PropertySearch.css";
-import "../../responsive.css";
 
 function PropertySearch() {
   return (

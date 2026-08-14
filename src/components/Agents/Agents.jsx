@@ -1,6 +1,6 @@
 import React from "react";
 import "./Agents.css";
-import "../../responsive.css";
+
 
 
 const Agents = () => {

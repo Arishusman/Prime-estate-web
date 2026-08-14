@@ -1,7 +1,6 @@
 import { NavLink, Link } from "react-router-dom";
 import { useState } from "react";
 import "./Navbar.css";
-import "../../responsive.css";
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);

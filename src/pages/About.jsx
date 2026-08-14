@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import "./About.css";
-import "../../responsive.css";
 const values = [
     {
         number: "01",

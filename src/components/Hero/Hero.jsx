@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import "./Hero.css";
-import "../../responsive.css";
 
 function Hero() {
     const heroImage =

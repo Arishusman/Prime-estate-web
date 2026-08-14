@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./Contact.css";
-import "../../responsive.css";
+
 
 function Contact() {
     const [submitted, setSubmitted] = useState(false);

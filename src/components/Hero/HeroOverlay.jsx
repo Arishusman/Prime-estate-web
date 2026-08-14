@@ -1,5 +1,5 @@
 import "./Hero.css";
-<link rel="stylesheet" href="responsive.css"></link>
+
 function HeroOverlay() {
     return (
         <div className="hero-overlay-content">

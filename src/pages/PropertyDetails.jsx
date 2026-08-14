@@ -1,5 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 import "./PropertyDetails.css";
+import "../../responsive.css";
 
 const properties = [
     {

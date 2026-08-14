@@ -1,4 +1,5 @@
 import "./Stats.css";
+import "../../responsive.css";
 
 const stats = [
   {

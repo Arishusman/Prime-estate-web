@@ -1,5 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 import "./AgentDetails.css";
+import "../../responsive.css";
 
 const agents = [
     {

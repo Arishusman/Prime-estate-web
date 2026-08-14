@@ -1,5 +1,6 @@
 import React from "react";
 import "./WhyChoose.css";
+import "../../responsive.css";
 
 const WhyChoose = () => {
 

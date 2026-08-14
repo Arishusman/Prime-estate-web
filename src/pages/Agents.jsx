@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Agents.css";
-
+import "../../responsive.css";
 const agents = [
     {
         id: "alex-morgan",

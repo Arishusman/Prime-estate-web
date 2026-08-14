@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Properties.css";
+import "../../responsive.css";
 
 const properties = [
     {

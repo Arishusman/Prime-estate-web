@@ -1,0 +1,1159 @@
+/* =========================================================
+   PRIME ESTATE
+   FINAL RESPONSIVE CSS
+   Mobile + Tablet
+========================================================= */
+
+
+/* =========================================================
+   GLOBAL RESPONSIVE FIXES
+========================================================= */
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+button,
+a,
+input,
+select,
+textarea {
+    max-width: 100%;
+}
+
+
+/* =========================================================
+   TABLET
+   1100px
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    /* -----------------------------------------------------
+       NAVBAR
+    ----------------------------------------------------- */
+
+    .navbar-container {
+        width: 92%;
+        min-height: 74px;
+        gap: 20px;
+    }
+
+    .navbar-menu {
+        gap: 22px;
+    }
+
+    .navbar-consultation {
+        padding: 0 13px;
+        font-size: 9px;
+    }
+
+
+    /* -----------------------------------------------------
+       WHY CHOOSE
+    ----------------------------------------------------- */
+
+    .why-container {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .why-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .why-features {
+        text-align: left;
+        max-width: 700px;
+        margin: auto;
+    }
+
+    .why-gallery {
+        width: 100%;
+        max-width: 800px;
+        margin: auto;
+        min-height: 600px;
+    }
+
+
+    /* -----------------------------------------------------
+       STATS
+    ----------------------------------------------------- */
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* -----------------------------------------------------
+       PROPERTY SEARCH
+    ----------------------------------------------------- */
+
+    .search-form {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* -----------------------------------------------------
+       TESTIMONIAL
+    ----------------------------------------------------- */
+
+    .testimonial-box {
+        padding: 60px 40px;
+    }
+
+    .testimonial-text {
+        font-size: 20px;
+    }
+
+    .testimonial-header h2 {
+        font-size: 42px;
+    }
+
+
+    /* -----------------------------------------------------
+       CTA
+    ----------------------------------------------------- */
+
+    .cta-section {
+        min-height: 520px;
+    }
+
+    .cta-content h2 {
+        font-size: 45px;
+    }
+
+    .cta-content p {
+        font-size: 16px;
+    }
+}
+
+
+/* =========================================================
+   TABLET / SMALL LAPTOP
+   992px
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .search-form {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE NAVBAR
+   760px
+========================================================= */
+
+@media (max-width: 760px) {
+
+    /* -----------------------------------------------------
+       NAVBAR
+    ----------------------------------------------------- */
+
+    .navbar-container {
+        width: 92%;
+        min-height: 70px;
+    }
+
+    .navbar-menu {
+        position: absolute;
+
+        top: 70px;
+        left: 4%;
+
+        width: 92%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+        gap: 0;
+        margin: 0;
+        padding: 10px;
+
+        border: 1px solid rgba(255, 255, 255, .09);
+        border-radius: 8px;
+
+        background: rgba(7, 13, 24, .97);
+
+        box-shadow:
+            0 25px 60px rgba(0, 0, 0, .3);
+
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+
+        opacity: 0;
+        visibility: hidden;
+
+        transform: translateY(-10px);
+
+        transition:
+            opacity .25s ease,
+            visibility .25s ease,
+            transform .25s ease;
+    }
+
+
+    .navbar-menu.navbar-menu-open {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+
+    .nav-link {
+        padding: 16px;
+        border-radius: 5px;
+        font-size: 11px;
+    }
+
+
+    .nav-link::after {
+        display: none;
+    }
+
+
+    .nav-link:hover,
+    .nav-link.active {
+        background: rgba(255, 255, 255, .06);
+        color: #ffffff;
+    }
+
+
+    .navbar-consultation {
+        display: none;
+    }
+
+
+    .navbar-toggle {
+        display: flex;
+        flex-shrink: 0;
+    }
+
+
+    /* -----------------------------------------------------
+       PROPERTY SEARCH
+    ----------------------------------------------------- */
+
+    .property-search {
+        margin-top: -40px;
+        padding: 0 15px 70px;
+    }
+
+
+    .search-card {
+        width: 100%;
+        padding: 24px;
+        border-radius: 18px;
+    }
+
+
+    .search-tabs {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+
+    .search-tabs button {
+        flex: 1;
+        min-width: 110px;
+        padding: 11px 18px;
+    }
+
+
+    .search-form {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+
+    .search-group select,
+    .search-btn {
+        width: 100%;
+    }
+
+
+    .search-btn {
+        margin-top: 4px;
+    }
+
+
+    /* -----------------------------------------------------
+       STATS
+    ----------------------------------------------------- */
+
+    .stats {
+        padding: 80px 16px;
+    }
+
+
+    .stats-container {
+        width: 100%;
+    }
+
+
+    .stats-header {
+        margin-bottom: 45px;
+    }
+
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+
+    .stat-card {
+        padding: 30px 24px;
+    }
+
+
+    .stat-card h3 {
+        font-size: 2.5rem;
+    }
+
+
+    .stats-header h2 {
+        font-size: 2rem;
+    }
+
+
+    .stats-header p {
+        font-size: .95rem;
+    }
+
+
+    /* -----------------------------------------------------
+       WHY CHOOSE
+    ----------------------------------------------------- */
+
+    .why-section {
+        padding: 80px 0;
+    }
+
+
+    .why-container {
+        width: 92%;
+        gap: 45px;
+    }
+
+
+    .why-content h2 {
+        font-size: 38px;
+    }
+
+
+    .why-description {
+        font-size: 15px;
+    }
+
+
+    .why-feature {
+        gap: 14px;
+    }
+
+
+    .why-feature h4 {
+        font-size: 17px;
+    }
+
+
+    .why-feature p {
+        font-size: 13px;
+    }
+
+
+    .why-btn {
+        margin-top: 30px;
+    }
+
+
+    /* -----------------------------------------------------
+       WHY GALLERY
+    ----------------------------------------------------- */
+
+    .why-gallery {
+        width: 100%;
+        min-height: 520px;
+    }
+
+
+    .gallery-large {
+        left: 20px;
+        width: 220px;
+        height: 320px;
+    }
+
+
+    .img-2 {
+        width: 120px;
+        height: 120px;
+        right: 10px;
+        top: 20px;
+    }
+
+
+    .img-3 {
+        width: 130px;
+        height: 140px;
+        right: 0;
+        top: 170px;
+    }
+
+
+    .gallery-medium {
+        width: 190px;
+        height: 150px;
+        left: 120px;
+        bottom: 40px;
+    }
+
+
+    .img-5 {
+        width: 100px;
+        height: 90px;
+        left: 0;
+    }
+
+
+    .img-6 {
+        width: 100px;
+        height: 90px;
+        right: 10px;
+    }
+
+
+    /* -----------------------------------------------------
+       TESTIMONIAL
+    ----------------------------------------------------- */
+
+    .testimonial-section {
+        padding: 80px 0;
+    }
+
+
+    .testimonial-container {
+        width: 92%;
+    }
+
+
+    .testimonial-header {
+        margin-bottom: 45px;
+    }
+
+
+    .testimonial-header h2 {
+        font-size: 36px;
+    }
+
+
+    .testimonial-box {
+        padding: 45px 20px;
+        border-radius: 20px;
+    }
+
+
+    .quote {
+        font-size: 80px;
+    }
+
+
+    .testimonial-text {
+        font-size: 17px;
+        line-height: 1.6;
+        margin: 25px auto 35px;
+    }
+
+
+    .testimonial-box h3 {
+        font-size: 21px;
+    }
+
+
+    .client-image {
+        width: 75px;
+        height: 75px;
+    }
+
+
+    /* -----------------------------------------------------
+       CTA
+    ----------------------------------------------------- */
+
+    .cta-section {
+        min-height: 480px;
+        padding: 80px 0;
+    }
+
+
+    .cta-container {
+        width: 92%;
+    }
+
+
+    .cta-content {
+        max-width: 100%;
+    }
+
+
+    .cta-content h2 {
+        font-size: 34px;
+        line-height: 1.2;
+    }
+
+
+    .cta-content p {
+        font-size: 15px;
+        line-height: 1.6;
+        margin-bottom: 30px;
+    }
+
+
+    .cta-button {
+        padding: 14px 32px;
+    }
+
+
+    .cta-tag {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   600px
+========================================================= */
+
+@media (max-width: 600px) {
+
+    /* -----------------------------------------------------
+       GENERAL
+    ----------------------------------------------------- */
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    /* -----------------------------------------------------
+       NAVBAR
+    ----------------------------------------------------- */
+
+    .navbar-container {
+        width: 90%;
+    }
+
+
+    .navbar-logo span,
+    .navbar-logo strong {
+        font-size: 13px;
+        letter-spacing: 1.5px;
+    }
+
+
+    .navbar-toggle {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    /* -----------------------------------------------------
+       PROPERTY SEARCH
+    ----------------------------------------------------- */
+
+    .property-search {
+        padding: 0 12px 60px;
+    }
+
+
+    .search-card {
+        padding: 20px 16px;
+        border-radius: 16px;
+    }
+
+
+    .search-tabs {
+        gap: 8px;
+    }
+
+
+    .search-tabs button {
+        min-width: 0;
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+
+
+    .search-group label {
+        font-size: .85rem;
+    }
+
+
+    .search-group select {
+        height: 52px;
+        font-size: 14px;
+    }
+
+
+    .search-btn {
+        height: 52px;
+        font-size: 14px;
+    }
+
+
+    /* -----------------------------------------------------
+       STATS
+    ----------------------------------------------------- */
+
+    .stats {
+        padding: 65px 14px;
+    }
+
+
+    .stats-header h2 {
+        font-size: 1.85rem;
+    }
+
+
+    .stats-header p {
+        font-size: .9rem;
+        line-height: 1.7;
+    }
+
+
+    .stat-card {
+        padding: 26px 20px;
+        border-radius: 18px;
+    }
+
+
+    .stat-card h3 {
+        font-size: 2.2rem;
+    }
+
+
+    .stat-card h4 {
+        font-size: 1.15rem;
+    }
+
+
+    .stat-card p {
+        font-size: .9rem;
+        line-height: 1.7;
+    }
+
+
+    /* -----------------------------------------------------
+       WHY CHOOSE
+    ----------------------------------------------------- */
+
+    .why-section {
+        padding: 65px 0;
+    }
+
+
+    .why-container {
+        width: 90%;
+    }
+
+
+    .why-content h2 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+
+    .why-tag {
+        font-size: 11px;
+        letter-spacing: 1.5px;
+    }
+
+
+    .why-description {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+
+    .why-feature {
+        gap: 12px;
+    }
+
+
+    .feature-icon {
+        width: 34px;
+        height: 34px;
+        font-size: 15px;
+    }
+
+
+    .why-feature h4 {
+        font-size: 16px;
+    }
+
+
+    .why-feature p {
+        font-size: 12.5px;
+    }
+
+
+    .why-btn {
+        width: 100%;
+        padding: 14px 25px;
+    }
+
+
+    /* -----------------------------------------------------
+       WHY GALLERY
+    ----------------------------------------------------- */
+
+    .why-gallery {
+        min-height: 430px;
+    }
+
+
+    .gallery-large {
+        left: 10px;
+        width: 180px;
+        height: 270px;
+        border-radius: 14px;
+    }
+
+
+    .img-2 {
+        width: 100px;
+        height: 100px;
+        right: 5px;
+        top: 10px;
+        border-radius: 14px;
+    }
+
+
+    .img-3 {
+        width: 110px;
+        height: 120px;
+        right: 0;
+        top: 130px;
+        border-radius: 14px;
+    }
+
+
+    .gallery-medium {
+        width: 160px;
+        height: 125px;
+        left: 90px;
+        bottom: 30px;
+        border-radius: 14px;
+    }
+
+
+    .img-5 {
+        width: 80px;
+        height: 75px;
+        left: 0;
+        bottom: 0;
+        border-radius: 12px;
+    }
+
+
+    .img-6 {
+        width: 80px;
+        height: 75px;
+        right: 5px;
+        bottom: 0;
+        border-radius: 12px;
+    }
+
+
+    /* -----------------------------------------------------
+       TESTIMONIAL
+    ----------------------------------------------------- */
+
+    .testimonial-section {
+        padding: 65px 0;
+    }
+
+
+    .testimonial-container {
+        width: 90%;
+    }
+
+
+    .testimonial-header {
+        margin-bottom: 35px;
+    }
+
+
+    .testimonial-header span {
+        font-size: 11px;
+        letter-spacing: 1.5px;
+        margin-bottom: 18px;
+    }
+
+
+    .testimonial-header h2 {
+        font-size: 30px;
+    }
+
+
+    .testimonial-box {
+        padding: 38px 16px;
+        border-radius: 18px;
+    }
+
+
+    .quote {
+        font-size: 65px;
+        height: 55px;
+    }
+
+
+    .testimonial-text {
+        font-size: 15px;
+        line-height: 1.7;
+        margin: 20px auto 30px;
+    }
+
+
+    .client-image {
+        width: 68px;
+        height: 68px;
+    }
+
+
+    .testimonial-box h3 {
+        font-size: 19px;
+    }
+
+
+    .client-role {
+        font-size: 13px;
+    }
+
+
+    .rating {
+        font-size: 15px;
+        letter-spacing: 3px;
+    }
+
+
+    /* -----------------------------------------------------
+       CTA
+    ----------------------------------------------------- */
+
+    .cta-section {
+        min-height: 430px;
+        padding: 65px 0;
+    }
+
+
+    .cta-content h2 {
+        font-size: 29px;
+    }
+
+
+    .cta-content p {
+        font-size: 14px;
+        line-height: 1.7;
+        margin-bottom: 28px;
+    }
+
+
+    .cta-tag {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+        margin-bottom: 18px;
+    }
+
+
+    .cta-button {
+        padding: 13px 27px;
+        font-size: 14px;
+    }
+
+}
+
+
+/* =========================================================
+   EXTRA SMALL PHONES
+   420px
+========================================================= */
+
+@media (max-width: 420px) {
+
+    /* -----------------------------------------------------
+       NAVBAR
+    ----------------------------------------------------- */
+
+    .navbar-container {
+        width: 90%;
+    }
+
+
+    .navbar-logo span,
+    .navbar-logo strong {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+
+    .navbar-menu {
+        left: 5%;
+        width: 90%;
+    }
+
+
+    /* -----------------------------------------------------
+       SEARCH
+    ----------------------------------------------------- */
+
+    .property-search {
+        margin-top: -25px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+
+    .search-card {
+        padding: 18px 14px;
+    }
+
+
+    .search-tabs button {
+        font-size: 12px;
+        padding: 9px 10px;
+    }
+
+
+    /* -----------------------------------------------------
+       WHY GALLERY
+    ----------------------------------------------------- */
+
+    .why-gallery {
+        min-height: 390px;
+    }
+
+
+    .gallery-large {
+        left: 5px;
+        width: 155px;
+        height: 235px;
+    }
+
+
+    .img-2 {
+        width: 85px;
+        height: 85px;
+        right: 0;
+    }
+
+
+    .img-3 {
+        width: 95px;
+        height: 105px;
+        right: 0;
+        top: 115px;
+    }
+
+
+    .gallery-medium {
+        width: 140px;
+        height: 110px;
+        left: 75px;
+        bottom: 25px;
+    }
+
+
+    .img-5 {
+        width: 70px;
+        height: 65px;
+    }
+
+
+    .img-6 {
+        width: 70px;
+        height: 65px;
+    }
+
+
+    /* -----------------------------------------------------
+       TESTIMONIAL
+    ----------------------------------------------------- */
+
+    .testimonial-header h2 {
+        font-size: 27px;
+    }
+
+
+    .testimonial-box {
+        padding: 32px 14px;
+    }
+
+
+    .testimonial-text {
+        font-size: 14px;
+    }
+
+
+    /* -----------------------------------------------------
+       CTA
+    ----------------------------------------------------- */
+
+    .cta-section {
+        min-height: 400px;
+    }
+
+
+    .cta-content h2 {
+        font-size: 26px;
+    }
+
+
+    .cta-content p {
+        font-size: 13px;
+    }
+
+
+    .cta-button {
+        padding: 12px 24px;
+        font-size: 13px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   360px
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .navbar-logo span,
+    .navbar-logo strong {
+        font-size: 11px;
+    }
+
+
+    .navbar-toggle {
+        width: 36px;
+        height: 36px;
+    }
+
+
+    .why-content h2 {
+        font-size: 28px;
+    }
+
+
+    .why-gallery {
+        min-height: 350px;
+    }
+
+
+    .gallery-large {
+        width: 140px;
+        height: 215px;
+    }
+
+
+    .img-2 {
+        width: 75px;
+        height: 75px;
+    }
+
+
+    .img-3 {
+        width: 85px;
+        height: 95px;
+        top: 105px;
+    }
+
+
+    .gallery-medium {
+        width: 125px;
+        height: 95px;
+        left: 65px;
+    }
+
+
+    .img-5,
+    .img-6 {
+        width: 60px;
+        height: 55px;
+    }
+
+
+    .testimonial-header h2 {
+        font-size: 25px;
+    }
+
+
+    .cta-content h2 {
+        font-size: 24px;
+    }
+
+}
+
+
+/* =========================================================
+   TOUCH DEVICES
+   Remove hover movement on mobile
+========================================================= */
+
+@media (hover: none) and (pointer: coarse) {
+
+    .stat-card:hover,
+    .why-btn:hover,
+    .cta-button:hover,
+    .search-btn:hover,
+    .navbar-consultation:hover {
+        transform: none;
+    }
+
+
+    .gallery-large:hover img,
+    .gallery-medium:hover img,
+    .gallery-small:hover img,
+    .client-image:hover {
+        transform: none;
+    }
+
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+
+}

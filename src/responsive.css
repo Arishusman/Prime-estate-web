@@ -2619,3 +2619,82 @@ textarea {
     }
 
 }
+
+
+@media (max-width: 768px) {
+
+    .agents-grid,
+    .agent-grid,
+    .agents-container,
+    .agent-list {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 16px !important;
+        padding: 0 14px !important;
+    }
+
+    .agent-card {
+        width: 100% !important;
+        min-width: 0 !important;
+        overflow: hidden !important;
+        border-radius: 16px !important;
+    }
+
+    .agent-card img {
+        width: 100% !important;
+        height: 210px !important;
+        object-fit: cover !important;
+        object-position: center !important;
+    }
+
+    .agent-card-content {
+        padding: 14px !important;
+    }
+
+    .agent-card h3 {
+        font-size: 15px !important;
+        margin-bottom: 5px !important;
+    }
+
+    .agent-card p {
+        font-size: 11px !important;
+        line-height: 1.5 !important;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .agents-grid,
+    .agent-grid,
+    .agents-container,
+    .agent-list {
+        gap: 10px !important;
+        padding: 0 10px !important;
+    }
+
+    .agent-card img {
+        height: 175px !important;
+    }
+
+    .agent-card-content {
+        padding: 11px !important;
+    }
+
+    .agent-card h3 {
+        font-size: 13px !important;
+    }
+
+    .agent-card p {
+        font-size: 10px !important;
+    }
+}
+
+
+@media (max-width: 360px) {
+
+    .agent-card img {
+        height: 155px !important;
+    }
+
+}

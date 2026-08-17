@@ -7,10 +7,9 @@ const properties = [
         id: "modern-luxury-villa",
         title: "Modern Luxury Villa",
         location: "DHA Phase 8, Lahore",
-        price: "PKR 18.5 Crore",
+        price: "18.5 Crore",
         type: "Villa",
         beds: 5,
-        baths: 6,
         area: "5,500 sq ft",
         image: `${import.meta.env.BASE_URL}images/properties/property-1.webp`,
         featured: true,
@@ -20,10 +19,9 @@ const properties = [
         id: "contemporary-residence",
         title: "Contemporary Residence",
         location: "Gulberg, Lahore",
-        price: "PKR 9.8 Crore",
+        price: "9.8 Crore",
         type: "House",
         beds: 4,
-        baths: 5,
         area: "3,800 sq ft",
         image: `${import.meta.env.BASE_URL}images/properties/property-2.webp`,
         featured: false,
@@ -33,10 +31,9 @@ const properties = [
         id: "premium-family-home",
         title: "Premium Family Home",
         location: "DHA Phase 6, Islamabad",
-        price: "PKR 7.5 Crore",
+        price: "7.5 Crore",
         type: "House",
         beds: 4,
-        baths: 4,
         area: "3,200 sq ft",
         image: `${import.meta.env.BASE_URL}images/properties/property-3.webp`,
         featured: true,
@@ -46,10 +43,9 @@ const properties = [
         id: "executive-apartment",
         title: "Executive Luxury Apartment",
         location: "Emaar, Karachi",
-        price: "PKR 5.2 Crore",
+        price: "5.2 Crore",
         type: "Apartment",
         beds: 3,
-        baths: 3,
         area: "2,100 sq ft",
         image: `${import.meta.env.BASE_URL}images/properties/property-4.webp`,
         featured: false,
@@ -59,10 +55,9 @@ const properties = [
         id: "skyline-penthouse",
         title: "Skyline Penthouse",
         location: "Clifton, Karachi",
-        price: "PKR 12.5 Crore",
+        price: "12.5 Crore",
         type: "Penthouse",
         beds: 4,
-        baths: 5,
         area: "4,200 sq ft",
         image: `${import.meta.env.BASE_URL}images/properties/property-5.webp`,
         featured: true,
@@ -72,10 +67,9 @@ const properties = [
         id: "garden-villa",
         title: "Private Garden Villa",
         location: "Bahria Town, Lahore",
-        price: "PKR 6.9 Crore",
+        price: "6.9 Crore",
         type: "Villa",
         beds: 5,
-        baths: 5,
         area: "4,000 sq ft",
         image: `${import.meta.env.BASE_URL}images/properties/property-6.webp`,
         featured: false,
@@ -245,13 +239,6 @@ function Properties() {
                                                 {property.beds}
                                             </strong>
                                             Beds
-                                        </span>
-
-                                        <span>
-                                            <strong>
-                                                {property.baths}
-                                            </strong>
-                                            Baths
                                         </span>
 
                                         <span>

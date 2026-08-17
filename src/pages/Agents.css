@@ -698,3 +698,101 @@
     }
 
 }
+
+
+/* =====================================================
+   PREMIUM MOBILE AGENTS FIX
+===================================================== */
+
+@media (max-width: 650px) {
+
+    .agents-section {
+        padding: 75px 0;
+        overflow: hidden;
+    }
+
+    .agents-container {
+        width: 92%;
+        max-width: 100%;
+        display: block !important;
+    }
+
+    /* Header MUST stay above cards */
+    .agents-header {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto 45px;
+        text-align: center;
+        display: block !important;
+    }
+
+    .agents-tag {
+        font-size: 11px;
+        letter-spacing: 1.8px;
+        margin-bottom: 18px;
+    }
+
+    .agents-header h2 {
+        font-size: 36px;
+        line-height: 1.12;
+        margin-bottom: 18px;
+    }
+
+    .agents-header p {
+        font-size: 14px;
+        line-height: 1.7;
+        margin: 0 auto;
+        max-width: 340px;
+    }
+
+    /* Cards ONLY one column */
+    .agents-grid {
+        width: 100%;
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 28px;
+    }
+
+    .agent-card {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 20px;
+    }
+
+    /* Better mobile image */
+    .agent-image {
+        width: 100%;
+        height: 360px;
+    }
+
+    .agent-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
+    }
+
+    .agent-info {
+        padding: 24px 22px 26px;
+    }
+
+    .agent-info h3 {
+        font-size: 22px;
+        margin-bottom: 8px;
+    }
+
+    .agent-info > span {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .agent-details {
+        gap: 11px;
+        padding-top: 18px;
+    }
+
+    .agent-details p {
+        font-size: 13px;
+    }
+
+}

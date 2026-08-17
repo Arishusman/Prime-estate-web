@@ -17,7 +17,7 @@ const properties = [
     {
         id: "premium-family-home",
         title: "Premium Family Home",
-        location: "DHA Phase 6, Islamabad",
+        location: "DHA Phase 6, Karachi",
         price: "7.5 Crore",
         type: "House",
         beds: 4,

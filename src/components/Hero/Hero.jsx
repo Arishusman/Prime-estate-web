@@ -12,15 +12,18 @@ function Hero() {
                 CINEMATIC VILLA BACKGROUND
             ===================================== */}
 
-            <div className="hero-background">
+            <picture>
+    <source
+        media="(max-width: 768px)"
+        srcSet={`${import.meta.env.BASE_URL}images/hero/villa-mobile.webp`}
+    />
 
-                <img
-                    src={heroImage}
-                    alt="Luxury Villa"
-                    className="hero-image"
-                />
-
-            </div>
+    <img
+        src={heroImage}
+        alt="Luxury Villa"
+        className="hero-image"
+    />
+</picture>
 
 
             {/* =====================================

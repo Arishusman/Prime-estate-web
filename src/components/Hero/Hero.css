@@ -584,401 +584,6 @@
 
 
 /* =========================================================
-   MOBILE — CLEAN SEPARATED DESIGN
-========================================================= */
-
-@media (max-width: 768px) {
-
-    .hero {
-        width: 100%;
-
-        height: auto;
-        min-height: 0;
-
-        overflow: hidden;
-
-        background: #fff;
-    }
-
-
-    /* -----------------------------------------------------
-       IMAGE SECTION
-    ----------------------------------------------------- */
-
-    .hero-background {
-        position: relative;
-
-        inset: auto;
-
-        width: 100%;
-        height: 430px;
-
-        overflow: hidden;
-
-        z-index: 1;
-    }
-
-    .hero-image {
-        position: absolute;
-
-        inset: 0;
-
-        width: 100%;
-        height: 100%;
-
-        object-fit: cover;
-        object-position: center;
-
-        animation: none;
-
-        transform: none;
-    }
-
-
-    /* -----------------------------------------------------
-       IMAGE OVERLAY
-    ----------------------------------------------------- */
-
-    .hero-overlay {
-        position: absolute;
-
-        inset: 0;
-
-        z-index: 2;
-
-        background:
-            linear-gradient(
-                to bottom,
-                rgba(5,8,12,.12) 0%,
-                rgba(5,8,12,.18) 45%,
-                rgba(5,8,12,.68) 100%
-            );
-    }
-
-    .hero-overlay::after {
-        display: none;
-    }
-
-
-    /* -----------------------------------------------------
-       CONTENT WRAPPER
-       IMPORTANT: NO absolute full-height panel
-    ----------------------------------------------------- */
-
-    .hero-content {
-    position: relative;
-
-    z-index: 5;
-
-    width: 100%;
-    min-height: 430px;
-
-    margin-top: -430px;
-    padding: 430px 0 0;
-
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: center;
-
-    justify-content: flex-start;
-
-    text-align: center;
-}
-
-    /* -----------------------------------------------------
-       BADGE — ON IMAGE
-    ----------------------------------------------------- */
-
-    .hero-badge {
-        position: absolute;
-
-        top: 52px;
-        left: 50%;
-
-        z-index: 10;
-
-        transform: translateX(-50%);
-
-        margin: 0;
-
-        padding: 8px 14px;
-
-        color: #fff;
-
-        background:
-            rgba(15,20,27,.50);
-
-        border:
-            1px solid
-            rgba(255,255,255,.35);
-
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-
-        border-radius: 999px;
-
-        font-size: 8px;
-
-        letter-spacing: 1.3px;
-
-        white-space: nowrap;
-
-        animation: none;
-    }
-
-
-    /* -----------------------------------------------------
-       TITLE — ONLY MAIN TEXT ON IMAGE
-    ----------------------------------------------------- */
-
-    .hero h1 {
-        position: absolute;
-
-        top: 135px;
-        left: 50%;
-
-        z-index: 10;
-
-        transform: translateX(-50%);
-
-        width: 90%;
-        max-width: 390px;
-
-        margin: 0;
-
-        color: #fff;
-
-        font-size:
-            clamp(2.55rem,10vw,3.4rem);
-
-        font-weight: 700;
-
-        line-height: 1;
-
-        letter-spacing: -.045em;
-
-        text-align: center;
-
-        text-shadow:
-            0 8px 30px rgba(0,0,0,.55);
-
-        animation: none;
-    }
-
-    .hero h1 span {
-        color: #fff;
-    }
-
-
-    /* -----------------------------------------------------
-       WHITE SECTION BELOW IMAGE
-    ----------------------------------------------------- */
-
-    .hero p {
-        position: relative;
-
-        top: auto;
-        left: auto;
-
-        transform: none;
-
-        width: 86%;
-        max-width: 430px;
-
-        margin: 0;
-
-        padding:
-            32px 0
-            0;
-
-        color: #626975;
-
-        font-size: .9rem;
-
-        line-height: 1.75;
-
-        text-align: center;
-
-        z-index: 5;
-
-        animation: none;
-    }
-
-
-    /* -----------------------------------------------------
-       BUTTONS — BELOW DESCRIPTION
-    ----------------------------------------------------- */
-
-    .hero-buttons {
-        position: relative;
-
-        left: auto;
-        bottom: auto;
-
-        transform: none;
-
-        z-index: 5;
-
-        width: 86%;
-        max-width: 350px;
-
-        margin:
-            24px auto
-            35px;
-
-        display: flex;
-
-        flex-direction: column;
-
-        align-items: stretch;
-
-        gap: 10px;
-
-        animation: none;
-    }
-
-
-    .hero-btn {
-        width: 100%;
-
-        min-width: 0;
-
-        height: 52px;
-
-        padding: 0 20px;
-
-        border-radius: 7px;
-
-        font-size: 12px;
-    }
-
-
-    /* -----------------------------------------------------
-       NO SCROLL ON MOBILE
-    ----------------------------------------------------- */
-
-    .hero-scroll {
-        display: none;
-    }
-}
-
-
-/* =========================================================
-   SMALL MOBILE
-========================================================= */
-
-@media (max-width: 480px) {
-
-    .hero-background {
-        height: 400px;
-    }
-
-    .hero-badge {
-        top: 46px;
-
-        padding: 7px 12px;
-
-        font-size: 7.5px;
-
-        letter-spacing: 1.2px;
-    }
-
-    .hero h1 {
-        top: 125px;
-
-        width: 90%;
-
-        font-size: 2.5rem;
-
-        line-height: 1;
-    }
-
-    .hero p {
-        width: 86%;
-
-        padding-top: 28px;
-
-        font-size: .86rem;
-
-        line-height: 1.65;
-    }
-
-    .hero-buttons {
-        width: 84%;
-
-        margin-top: 21px;
-        margin-bottom: 30px;
-
-        gap: 9px;
-    }
-
-    .hero-btn {
-        height: 50px;
-
-        font-size: 11px;
-    }
-}
-
-
-/* =========================================================
-   VERY SMALL MOBILE
-========================================================= */
-
-@media (max-width: 380px) {
-
-    .hero-background {
-        height: 380px;
-    }
-
-    .hero-badge {
-        top: 42px;
-
-        font-size: 7px;
-    }
-
-    .hero h1 {
-        top: 118px;
-
-        font-size: 2.3rem;
-    }
-
-    .hero p {
-        font-size: .82rem;
-    }
-
-    .hero-buttons {
-        width: 88%;
-    }
-
-    .hero-btn {
-        height: 48px;
-
-        font-size: 10px;
-    }
-}
-
-
-/* =========================================================
-   TOUCH DEVICES
-========================================================= */
-
-@media (hover: none) {
-
-    .hero-btn-primary:hover,
-    .hero-btn-secondary:hover {
-        transform: none;
-    }
-
-    .hero-btn-primary:hover::before,
-    .hero-btn-secondary:hover::before {
-        left: -130%;
-    }
-}
-
-
-/* =========================================================
    REDUCED MOTION
 ========================================================= */
 
@@ -995,4 +600,51 @@
     .hero-scroll-line::after {
         animation: none;
     }
+}
+
+
+@media (max-width: 768px) {
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+        width: 86%;
+        max-width: 350px;
+        gap: 10px;
+    }
+
+    .hero-btn {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 86%;
+        max-width: 350px;
+        gap: 10px;
+    }
+
+    .hero-btn {
+        width: 100%;
+        min-width: 0;
+    }
+}
+
+.hero-image {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    animation: mobileVillaMotion 16s ease-in-out infinite alternate;
+    transform-origin: center center;
 }

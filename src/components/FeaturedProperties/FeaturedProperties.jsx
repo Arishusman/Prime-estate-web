@@ -6,10 +6,9 @@ const properties = [
         id: "modern-luxury-villa",
         title: "Modern Luxury Villa",
         location: "DHA Phase 8, Lahore",
-        price: "PKR 18.5 Crore",
+        price: "18.5 Crore",
         type: "Villa",
         beds: 5,
-        baths: 6,
         area: "5,500 sq ft",
         image: `${import.meta.env.BASE_URL}images/properties/property-1.webp`,
         featured: true,
@@ -19,10 +18,9 @@ const properties = [
         id: "premium-family-home",
         title: "Premium Family Home",
         location: "DHA Phase 6, Islamabad",
-        price: "PKR 7.5 Crore",
+        price: "7.5 Crore",
         type: "House",
         beds: 4,
-        baths: 4,
         area: "3,200 sq ft",
         image: `${import.meta.env.BASE_URL}images/properties/property-3.webp`,
         featured: true,
@@ -32,10 +30,9 @@ const properties = [
         id: "skyline-penthouse",
         title: "Skyline Penthouse",
         location: "Clifton, Karachi",
-        price: "PKR 12.5 Crore",
+        price: "12.5 Crore",
         type: "Penthouse",
         beds: 4,
-        baths: 5,
         area: "4,200 sq ft",
         image: `${import.meta.env.BASE_URL}images/properties/property-5.webp`,
         featured: true,
@@ -45,10 +42,9 @@ const properties = [
         id: "contemporary-residence",
         title: "Contemporary Residence",
         location: "Gulberg, Lahore",
-        price: "PKR 9.8 Crore",
+        price: "9.8 Crore",
         type: "House",
         beds: 4,
-        baths: 5,
         area: "3,800 sq ft",
         image: `${import.meta.env.BASE_URL}images/properties/property-2.webp`,
         featured: false,
@@ -146,15 +142,7 @@ function FeaturedProperties() {
                                     </div>
 
 
-                                    <div>
-                                        <strong>
-                                            {property.baths}
-                                        </strong>
-
-                                        <span>
-                                            Baths
-                                        </span>
-                                    </div>
+                                    
 
 
                                     <div>

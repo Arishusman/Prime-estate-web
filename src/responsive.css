@@ -2456,311 +2456,376 @@ textarea {
 
 }
 
+
+
 /* =========================================================
-   PRIME ESTATE — FINAL HERO RESPONSIVE
-   CLEAN VERSION
-   Paste at the VERY END of responsive.css
+   PRIME ESTATE
+   FINAL MOBILE 2-COLUMN OVERRIDE
+   PASTE AT THE VERY END OF responsive.css
 ========================================================= */
 
 
 /* =========================================================
-   TABLET
-   1100px
+   MOBILE ONLY
+   Desktop completely untouched
 ========================================================= */
 
-@media (max-width: 1100px) {
+@media screen and (max-width: 768px) {
 
-    .hero {
-        width: 100%;
-        overflow: hidden;
-    }
+    /* =====================================================
+       PROPERTIES
+       2 CARDS PER ROW
+    ===================================================== */
 
-    .hero-container {
-        width: 92%;
-        max-width: 1100px;
-        margin: 0 auto;
+    .properties-grid,
+    .property-grid,
+    .properties-container,
+    .property-list {
 
-        display: flex;
-        align-items: center;
-        gap: 40px;
-    }
+        display: grid !important;
 
-    .hero-content {
-        flex: 1;
-        min-width: 0;
-    }
-
-    .hero-image {
-        flex: 1;
-        min-width: 0;
-    }
-
-    .hero-image img {
-        width: 100%;
-        height: auto;
-        display: block;
-        object-fit: cover;
-    }
-
-}
-
-
-/* =========================================================
-   MOBILE
-   768px
-========================================================= */
-
-@media (max-width: 768px) {
-
-    /* HERO SECTION */
-
-    .hero {
-        width: 100% !important;
-        height: auto !important;
-        min-height: auto !important;
-
-        padding: 70px 0 60px !important;
-
-        overflow: hidden !important;
-
-        position: relative !important;
-    }
-
-
-    /* HERO CONTAINER */
-
-    .hero-container {
-        width: 92% !important;
-        max-width: 600px !important;
-
-        margin: 0 auto !important;
-
-        display: flex !important;
-        flex-direction: column !important;
-
-        align-items: center !important;
-        justify-content: flex-start !important;
-
-        gap: 32px !important;
-    }
-
-
-    /* HERO CONTENT */
-
-    .hero-content {
-        width: 100% !important;
-        max-width: 500px !important;
-
-        margin: 0 auto !important;
-        padding: 0 !important;
-
-        display: flex !important;
-        flex-direction: column !important;
-
-        align-items: center !important;
-
-        text-align: center !important;
-
-        order: 1 !important;
-
-        position: relative !important;
-
-        z-index: 5 !important;
-    }
-
-
-    /* HERO TAG */
-
-    .hero-tag {
-        display: inline-block !important;
-
-        margin: 0 0 18px !important;
-
-        position: relative !important;
-
-        z-index: 6 !important;
-    }
-
-
-    /* If tag is a span directly inside hero content */
-
-    .hero-content > span {
-        display: inline-block !important;
-
-        margin-bottom: 18px !important;
-
-        position: relative !important;
-
-        z-index: 6 !important;
-    }
-
-
-    /* HERO HEADING */
-
-    .hero h1 {
-        width: 100% !important;
-
-        max-width: 450px !important;
-
-        margin: 0 auto 18px !important;
-
-        padding: 0 !important;
-
-        font-size: clamp(38px, 9vw, 54px) !important;
-
-        line-height: 1.05 !important;
-
-        text-align: center !important;
-
-        position: relative !important;
-
-        z-index: 6 !important;
-    }
-
-
-    /* HERO DESCRIPTION */
-
-    .hero-description {
-        width: 100% !important;
-
-        max-width: 430px !important;
-
-        margin: 0 auto 25px !important;
-
-        padding: 0 !important;
-
-        font-size: 14px !important;
-
-        line-height: 1.65 !important;
-
-        text-align: center !important;
-
-        position: relative !important;
-
-        z-index: 6 !important;
-    }
-
-
-    /* HERO BUTTON AREA */
-
-    .hero-buttons {
-        width: 100% !important;
-
-        max-width: 340px !important;
-
-        margin: 0 auto !important;
-
-        padding: 0 !important;
-
-        display: flex !important;
-
-        flex-direction: column !important;
-
-        align-items: center !important;
-
-        justify-content: center !important;
-
-        gap: 12px !important;
-
-        position: relative !important;
-
-        z-index: 10 !important;
-    }
-
-
-    /* HERO BUTTONS */
-
-    .hero-buttons a,
-    .hero-buttons button,
-    .hero-btn,
-    .hero-btn-primary,
-    .hero-btn-secondary {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
 
         width: 100% !important;
 
-        max-width: 340px !important;
+        gap: 14px !important;
 
-        min-width: 0 !important;
+        padding-left: 12px !important;
+        padding-right: 12px !important;
 
-        height: 52px !important;
-
-        min-height: 52px !important;
-
-        margin: 0 !important;
-
-        padding: 0 20px !important;
-
-        display: flex !important;
-
-        align-items: center !important;
-
-        justify-content: center !important;
-
-        text-align: center !important;
-
-        position: relative !important;
-
-        z-index: 10 !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
 
         box-sizing: border-box !important;
     }
 
 
-    /* =====================================================
-       HERO IMAGE
-    ===================================================== */
-
-    .hero-image {
+    .properties-grid > *,
+    .property-grid > *,
+    .properties-container > *,
+    .property-list > * {
 
         width: 100% !important;
 
-        max-width: 520px !important;
+        min-width: 0 !important;
 
-        height: 280px !important;
+        max-width: 100% !important;
 
-        min-height: 280px !important;
-
-        max-height: 280px !important;
-
-        margin: 0 auto !important;
-
-        padding: 0 !important;
-
-        overflow: hidden !important;
-
-        display: block !important;
-
-        order: 2 !important;
-
-        position: relative !important;
-
-        z-index: 2 !important;
-
-        border-radius: 18px !important;
+        box-sizing: border-box !important;
     }
 
 
-    .hero-image img {
+    .property-card {
 
         width: 100% !important;
 
-        height: 100% !important;
+        min-width: 0 !important;
 
-        min-height: 100% !important;
+        max-width: 100% !important;
 
-        max-height: 100% !important;
+        overflow: hidden !important;
 
-        max-width: none !important;
+        box-sizing: border-box !important;
+    }
 
-        margin: 0 !important;
 
-        padding: 0 !important;
+    .property-card img {
 
-        display: block !important;
+        width: 100% !important;
+
+        height: 170px !important;
+
+        min-height: 170px !important;
+
+        max-height: 170px !important;
 
         object-fit: cover !important;
 
-        object-position: center !important;
+        display: block !important;
+    }
+
+
+    .property-card-content {
+
+        width: 100% !important;
+
+        padding: 12px !important;
+
+        box-sizing: border-box !important;
+    }
+
+
+    .property-card h3 {
+
+        font-size: 15px !important;
+
+        line-height: 1.3 !important;
+
+        word-break: break-word !important;
+    }
+
+
+    .property-card p {
+
+        font-size: 12px !important;
+
+        line-height: 1.5 !important;
+
+        word-break: break-word !important;
+    }
+
+
+    /* =====================================================
+       NUMBERS / STATS
+       25K | 18K | 450+ | 15+
+       2 CARDS PER ROW
+    ===================================================== */
+
+    .stats-grid {
+
+        display: grid !important;
+
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+
+        width: 100% !important;
+
+        gap: 14px !important;
+
+        padding-left: 12px !important;
+
+        padding-right: 12px !important;
+
+        margin: 0 !important;
+
+        box-sizing: border-box !important;
+    }
+
+
+    .stats-grid > * {
+
+        width: 100% !important;
+
+        min-width: 0 !important;
+
+        max-width: 100% !important;
+
+        box-sizing: border-box !important;
+    }
+
+
+    .stat-card {
+
+        width: 100% !important;
+
+        min-width: 0 !important;
+
+        max-width: 100% !important;
+
+        padding: 25px 12px !important;
+
+        margin: 0 !important;
+
+        text-align: center !important;
+
+        box-sizing: border-box !important;
+
+        overflow: hidden !important;
+    }
+
+
+    .stat-card h3 {
+
+        font-size: 2rem !important;
+
+        line-height: 1.1 !important;
+
+        white-space: nowrap !important;
+
+        margin-bottom: 8px !important;
+    }
+
+
+    .stat-card h4 {
+
+        font-size: 1rem !important;
+
+        line-height: 1.3 !important;
+
+        word-break: break-word !important;
+    }
+
+
+    .stat-card p {
+
+        font-size: .8rem !important;
+
+        line-height: 1.5 !important;
+
+        word-break: break-word !important;
+    }
+
+
+    /* =====================================================
+       AGENTS
+       2 CARDS PER ROW
+    ===================================================== */
+
+    .agents-grid,
+    .agent-grid,
+    .agents-container,
+    .agent-list {
+
+        display: grid !important;
+
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+
+        width: 100% !important;
+
+        gap: 14px !important;
+
+        padding-left: 12px !important;
+
+        padding-right: 12px !important;
+
+        margin: 0 !important;
+
+        box-sizing: border-box !important;
+    }
+
+
+    .agents-grid > *,
+    .agent-grid > *,
+    .agents-container > *,
+    .agent-list > * {
+
+        width: 100% !important;
+
+        min-width: 0 !important;
+
+        max-width: 100% !important;
+
+        box-sizing: border-box !important;
+    }
+
+
+    .agent-card {
+
+        width: 100% !important;
+
+        min-width: 0 !important;
+
+        max-width: 100% !important;
+
+        overflow: hidden !important;
+
+        box-sizing: border-box !important;
+    }
+
+
+    .agent-card img {
+
+        width: 100% !important;
+
+        height: 190px !important;
+
+        min-height: 190px !important;
+
+        max-height: 190px !important;
+
+        object-fit: cover !important;
+
+        display: block !important;
+    }
+
+
+    .agent-card-content {
+
+        padding: 12px !important;
+
+        box-sizing: border-box !important;
+    }
+
+
+    .agent-card h3 {
+
+        font-size: 14px !important;
+
+        line-height: 1.3 !important;
+
+        word-break: break-word !important;
+    }
+
+
+    .agent-card p {
+
+        font-size: 11px !important;
+
+        line-height: 1.5 !important;
+    }
+
+
+    /* =====================================================
+       CLIENTS
+       2 CARDS PER ROW
+    ===================================================== */
+
+    .clients-grid,
+    .client-grid,
+    .clients-container,
+    .client-list {
+
+        display: grid !important;
+
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+
+        width: 100% !important;
+
+        gap: 14px !important;
+
+        padding-left: 12px !important;
+
+        padding-right: 12px !important;
+
+        box-sizing: border-box !important;
+    }
+
+
+    .clients-grid > *,
+    .client-grid > *,
+    .clients-container > *,
+    .client-list > * {
+
+        min-width: 0 !important;
+
+        max-width: 100% !important;
+
+        box-sizing: border-box !important;
+    }
+
+
+    .client-card {
+
+        width: 100% !important;
+
+        min-width: 0 !important;
+
+        max-width: 100% !important;
+
+        overflow: hidden !important;
+
+        box-sizing: border-box !important;
+    }
+
+
+    .client-card img {
+
+        width: 100% !important;
+
+        height: 160px !important;
+
+        object-fit: cover !important;
+
+        display: block !important;
     }
 
 }
@@ -2771,99 +2836,152 @@ textarea {
    480px
 ========================================================= */
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
 
-    .hero {
+    /* PROPERTIES */
 
-        padding: 55px 0 50px !important;
-    }
+    .properties-grid,
+    .property-grid,
+    .properties-container,
+    .property-list {
 
-
-    .hero-container {
-
-        width: 90% !important;
-
-        gap: 26px !important;
-    }
-
-
-    .hero-content {
-
-        max-width: 360px !important;
-    }
-
-
-    .hero h1 {
-
-        max-width: 340px !important;
-
-        font-size: 36px !important;
-
-        line-height: 1.06 !important;
-
-        margin-bottom: 16px !important;
-    }
-
-
-    .hero-description {
-
-        max-width: 330px !important;
-
-        font-size: 13px !important;
-
-        line-height: 1.65 !important;
-
-        margin-bottom: 22px !important;
-    }
-
-
-    .hero-buttons {
-
-        max-width: 300px !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
 
         gap: 10px !important;
+
+        padding-left: 10px !important;
+        padding-right: 10px !important;
     }
 
 
-    .hero-buttons a,
-    .hero-buttons button,
-    .hero-btn,
-    .hero-btn-primary,
-    .hero-btn-secondary {
+    .property-card img {
 
-        max-width: 300px !important;
+        height: 135px !important;
 
-        height: 48px !important;
+        min-height: 135px !important;
 
-        min-height: 48px !important;
-
-        font-size: 12px !important;
+        max-height: 135px !important;
     }
 
 
-    .hero-image {
+    .property-card-content {
 
-        width: 100% !important;
-
-        height: 230px !important;
-
-        min-height: 230px !important;
-
-        max-height: 230px !important;
-
-        border-radius: 15px !important;
+        padding: 10px !important;
     }
 
 
-    .hero-image img {
+    .property-card h3 {
 
-        width: 100% !important;
+        font-size: 13px !important;
+    }
 
-        height: 100% !important;
 
-        object-fit: cover !important;
+    .property-card p {
 
-        object-position: center !important;
+        font-size: 10px !important;
+    }
+
+
+    /* STATS */
+
+    .stats-grid {
+
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+
+        gap: 10px !important;
+
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+
+    .stat-card {
+
+        padding: 20px 8px !important;
+    }
+
+
+    .stat-card h3 {
+
+        font-size: 1.55rem !important;
+    }
+
+
+    .stat-card h4 {
+
+        font-size: .85rem !important;
+    }
+
+
+    .stat-card p {
+
+        font-size: .7rem !important;
+    }
+
+
+    /* AGENTS */
+
+    .agents-grid,
+    .agent-grid,
+    .agents-container,
+    .agent-list {
+
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+
+        gap: 10px !important;
+
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+
+    .agent-card img {
+
+        height: 155px !important;
+
+        min-height: 155px !important;
+
+        max-height: 155px !important;
+    }
+
+
+    .agent-card-content {
+
+        padding: 10px !important;
+    }
+
+
+    .agent-card h3 {
+
+        font-size: 13px !important;
+    }
+
+
+    .agent-card p {
+
+        font-size: 10px !important;
+    }
+
+
+    /* CLIENTS */
+
+    .clients-grid,
+    .client-grid,
+    .clients-container,
+    .client-list {
+
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+
+        gap: 10px !important;
+
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+
+    .client-card img {
+
+        height: 130px !important;
     }
 
 }
@@ -2872,75 +2990,684 @@ textarea {
 /* =========================================================
    EXTRA SMALL
    360px
+   STILL 2 COLUMNS
+========================================================= */
+
+@media screen and (max-width: 360px) {
+
+    .properties-grid,
+    .property-grid,
+    .properties-container,
+    .property-list,
+    .agents-grid,
+    .agent-grid,
+    .agents-container,
+    .agent-list,
+    .clients-grid,
+    .client-grid,
+    .clients-container,
+    .client-list,
+    .stats-grid {
+
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+
+        gap: 8px !important;
+
+        padding-left: 8px !important;
+
+        padding-right: 8px !important;
+    }
+
+
+    /* PROPERTY */
+
+    .property-card img {
+
+        height: 115px !important;
+
+        min-height: 115px !important;
+
+        max-height: 115px !important;
+    }
+
+
+    .property-card-content {
+
+        padding: 8px !important;
+    }
+
+
+    .property-card h3 {
+
+        font-size: 12px !important;
+    }
+
+
+    .property-card p {
+
+        font-size: 9px !important;
+    }
+
+
+    /* STATS */
+
+    .stat-card {
+
+        padding: 17px 5px !important;
+    }
+
+
+    .stat-card h3 {
+
+        font-size: 1.35rem !important;
+    }
+
+
+    .stat-card h4 {
+
+        font-size: .75rem !important;
+    }
+
+
+    .stat-card p {
+
+        font-size: .64rem !important;
+    }
+
+
+    /* AGENTS */
+
+    .agent-card img {
+
+        height: 130px !important;
+
+        min-height: 130px !important;
+
+        max-height: 130px !important;
+    }
+
+
+    .agent-card-content {
+
+        padding: 8px !important;
+    }
+
+
+    .agent-card h3 {
+
+        font-size: 12px !important;
+    }
+
+
+    .agent-card p {
+
+        font-size: 9px !important;
+    }
+
+
+    /* CLIENTS */
+
+    .client-card img {
+
+        height: 110px !important;
+    }
+
+}
+
+/* =========================================================
+   PRIME ESTATE - FINAL MOBILE FIX
+   Desktop ko touch nahi karega
+========================================================= */
+
+
+/* =========================================================
+   MOBILE ONLY
+========================================================= */
+
+@media (max-width: 768px) {
+
+    /* -----------------------------------------------------
+       PROPERTIES SECTION
+       2 CARDS PER ROW
+    ----------------------------------------------------- */
+
+    .properties-section,
+    .property-section {
+        width: 100% !important;
+        display: block !important;
+        overflow: hidden !important;
+    }
+
+    .properties-grid,
+    .property-grid,
+    .properties-container,
+    .property-list {
+        width: 100% !important;
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 12px !important;
+        padding: 0 12px !important;
+        margin: 0 !important;
+        align-items: start !important;
+    }
+
+    .property-card {
+        width: 100% !important;
+        min-width: 0 !important;
+        height: auto !important;
+        min-height: 0 !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+
+        overflow: hidden !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* Property image */
+    .property-card > img,
+    .property-card .property-image,
+    .property-card .property-image img {
+        width: 100% !important;
+
+        height: 150px !important;
+        min-height: 150px !important;
+        max-height: 150px !important;
+
+        display: block !important;
+
+        object-fit: cover !important;
+        object-position: center !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* Property content */
+    .property-card-content {
+        width: 100% !important;
+        height: auto !important;
+        min-height: 0 !important;
+
+        padding: 12px !important;
+        margin: 0 !important;
+
+        display: block !important;
+    }
+
+
+    /* -----------------------------------------------------
+       AGENTS SECTION
+       HEADING/TEXT = ABOVE
+       CARDS = BELOW
+    ----------------------------------------------------- */
+
+    .agents-section,
+    .agent-section {
+        width: 100% !important;
+        display: block !important;
+        overflow: hidden !important;
+    }
+
+    /*
+       Important:
+       Agar heading + grid kisi parent container mein
+       hain to mobile par column mein rakho.
+    */
+
+    .agents-section > *,
+    .agent-section > * {
+        width: 100% !important;
+    }
+
+    .agents-grid,
+    .agent-grid,
+    .agents-container,
+    .agent-list {
+        width: 100% !important;
+
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+
+        gap: 12px !important;
+
+        padding: 0 12px !important;
+        margin: 25px 0 0 !important;
+
+        clear: both !important;
+    }
+
+    .agent-card {
+        width: 100% !important;
+        min-width: 0 !important;
+
+        height: auto !important;
+        min-height: 0 !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+
+        overflow: hidden !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* Agent image */
+    .agent-card > img,
+    .agent-card .agent-image,
+    .agent-card .agent-image img {
+        width: 100% !important;
+
+        height: 180px !important;
+        min-height: 180px !important;
+        max-height: 180px !important;
+
+        display: block !important;
+
+        object-fit: cover !important;
+        object-position: center !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* Agent content */
+    .agent-card-content {
+        width: 100% !important;
+
+        height: auto !important;
+        min-height: 0 !important;
+
+        padding: 12px !important;
+        margin: 0 !important;
+    }
+
+
+    /* -----------------------------------------------------
+       STATS / NUMBERS
+       25K | 18K
+       450+ | 15+
+    ----------------------------------------------------- */
+
+    .stats {
+        width: 100% !important;
+        overflow: hidden !important;
+    }
+
+    .stats-container {
+        width: 100% !important;
+    }
+
+    .stats-grid {
+        width: 100% !important;
+
+        display: grid !important;
+
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+
+        gap: 12px !important;
+
+        padding: 0 12px !important;
+        margin: 0 !important;
+    }
+
+    .stat-card {
+        width: 100% !important;
+        min-width: 0 !important;
+
+        margin: 0 !important;
+
+        padding: 25px 12px !important;
+
+        text-align: center !important;
+
+        overflow: hidden !important;
+    }
+
+    .stat-card h3 {
+        font-size: 1.8rem !important;
+        line-height: 1.1 !important;
+        white-space: nowrap !important;
+    }
+
+    .stat-card h4 {
+        font-size: .95rem !important;
+        line-height: 1.3 !important;
+    }
+
+    .stat-card p {
+        font-size: .78rem !important;
+        line-height: 1.5 !important;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    /* PROPERTIES */
+
+    .properties-grid,
+    .property-grid,
+    .properties-container,
+    .property-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 9px !important;
+        padding: 0 9px !important;
+    }
+
+    .property-card > img,
+    .property-card .property-image,
+    .property-card .property-image img {
+        height: 130px !important;
+        min-height: 130px !important;
+        max-height: 130px !important;
+    }
+
+    .property-card-content {
+        padding: 9px !important;
+    }
+
+
+    /* AGENTS */
+
+    .agents-grid,
+    .agent-grid,
+    .agents-container,
+    .agent-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 9px !important;
+        padding: 0 9px !important;
+        margin-top: 22px !important;
+    }
+
+    .agent-card > img,
+    .agent-card .agent-image,
+    .agent-card .agent-image img {
+        height: 150px !important;
+        min-height: 150px !important;
+        max-height: 150px !important;
+    }
+
+    .agent-card-content {
+        padding: 9px !important;
+    }
+
+
+    /* STATS */
+
+    .stats-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 9px !important;
+        padding: 0 9px !important;
+    }
+
+    .stat-card {
+        padding: 20px 8px !important;
+    }
+
+    .stat-card h3 {
+        font-size: 1.55rem !important;
+    }
+
+    .stat-card h4 {
+        font-size: .82rem !important;
+    }
+
+    .stat-card p {
+        font-size: .7rem !important;
+    }
+
+}
+
+
+/* =========================================================
+   EXTRA SMALL
 ========================================================= */
 
 @media (max-width: 360px) {
 
-    .hero {
-
-        padding: 45px 0 40px !important;
+    .properties-grid,
+    .property-grid,
+    .properties-container,
+    .property-list,
+    .agents-grid,
+    .agent-grid,
+    .agents-container,
+    .agent-list,
+    .stats-grid {
+        gap: 7px !important;
+        padding-left: 7px !important;
+        padding-right: 7px !important;
     }
 
 
-    .hero-container {
-
-        width: 92% !important;
-
-        gap: 22px !important;
+    .property-card > img,
+    .property-card .property-image,
+    .property-card .property-image img {
+        height: 115px !important;
+        min-height: 115px !important;
+        max-height: 115px !important;
     }
 
 
-    .hero h1 {
-
-        max-width: 290px !important;
-
-        font-size: 32px !important;
-
-        line-height: 1.05 !important;
+    .agent-card > img,
+    .agent-card .agent-image,
+    .agent-card .agent-image img {
+        height: 130px !important;
+        min-height: 130px !important;
+        max-height: 130px !important;
     }
 
 
-    .hero-description {
+    .stat-card {
+        padding: 17px 6px !important;
+    }
 
-        max-width: 280px !important;
+    .stat-card h3 {
+        font-size: 1.4rem !important;
+    }
 
-        font-size: 12px !important;
+    .stat-card h4 {
+        font-size: .76rem !important;
+    }
 
-        line-height: 1.6 !important;
+    .stat-card p {
+        font-size: .65rem !important;
+    }
+
+}
+
+/* =========================================================
+   AGENTS MOBILE - TEXT FIRST, CARDS BELOW
+========================================================= */
+
+@media (max-width: 768px) {
+
+    /* Main agents section */
+    .agents-section,
+    .agent-section {
+        width: 100% !important;
+        display: block !important;
+        overflow: hidden !important;
+    }
+
+    /* Main container MUST be vertical */
+    .agents-section .container,
+    .agent-section .container,
+    .agents-container {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+    }
+
+    /* -----------------------------------------
+       AGENTS TEXT / HEADING
+       FULL ROW ON TOP
+    ----------------------------------------- */
+
+    .agents-section .section-header,
+    .agents-section .section-title,
+    .agents-section .agents-header,
+    .agents-section .agents-content,
+    .agent-section .section-header,
+    .agent-section .section-title,
+    .agent-section .agents-header,
+    .agent-section .agents-content {
+
+        width: 100% !important;
+        max-width: 100% !important;
+
+        display: block !important;
+
+        position: relative !important;
+
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+
+        float: none !important;
+
+        text-align: center !important;
+
+        order: 1 !important;
     }
 
 
-    .hero-buttons {
+    /* -----------------------------------------
+       AGENTS GRID
+       NEW ROW AFTER TEXT
+    ----------------------------------------- */
 
-        max-width: 270px !important;
+    .agents-grid,
+    .agent-grid,
+    .agent-list {
+
+        width: 100% !important;
+
+        display: grid !important;
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+
+        gap: 12px !important;
+
+        margin: 30px 0 0 !important;
+
+        padding: 0 12px !important;
+
+        position: relative !important;
+
+        float: none !important;
+
+        clear: both !important;
+
+        order: 2 !important;
     }
 
 
-    .hero-buttons a,
-    .hero-buttons button,
-    .hero-btn,
-    .hero-btn-primary,
-    .hero-btn-secondary {
+    /* -----------------------------------------
+       AGENT CARDS
+    ----------------------------------------- */
 
-        max-width: 270px !important;
+    .agents-grid .agent-card,
+    .agent-grid .agent-card,
+    .agent-list .agent-card {
 
-        height: 45px !important;
+        width: 100% !important;
 
-        min-height: 45px !important;
+        min-width: 0 !important;
 
-        font-size: 11px !important;
+        height: auto !important;
+
+        margin: 0 !important;
+
+        float: none !important;
+
+        display: flex !important;
+
+        flex-direction: column !important;
+
+        overflow: hidden !important;
     }
 
 
-    .hero-image {
+    /* Agent image */
 
-        height: 205px !important;
+    .agents-grid .agent-card img,
+    .agent-grid .agent-card img,
+    .agent-list .agent-card img {
 
-        min-height: 205px !important;
+        width: 100% !important;
 
-        max-height: 205px !important;
+        height: 180px !important;
 
-        border-radius: 13px !important;
+        min-height: 180px !important;
+
+        max-height: 180px !important;
+
+        display: block !important;
+
+        object-fit: cover !important;
+
+        margin: 0 !important;
     }
 
+
+    /* Agent content */
+
+    .agents-grid .agent-card-content,
+    .agent-grid .agent-card-content,
+    .agent-list .agent-card-content {
+
+        width: 100% !important;
+
+        height: auto !important;
+
+        min-height: 0 !important;
+
+        padding: 12px !important;
+
+        margin: 0 !important;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .agents-grid,
+    .agent-grid,
+    .agent-list {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+
+        gap: 10px !important;
+
+        margin-top: 25px !important;
+
+        padding: 0 10px !important;
+    }
+
+
+    .agents-grid .agent-card img,
+    .agent-grid .agent-card img,
+    .agent-list .agent-card img {
+
+        height: 155px !important;
+
+        min-height: 155px !important;
+
+        max-height: 155px !important;
+    }
 }
